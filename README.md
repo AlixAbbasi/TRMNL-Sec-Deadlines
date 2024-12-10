@@ -1,2 +1,2 @@
 # TRMNL-Sec-Deadlines
-Sec Deadlines to TRMNL E-Ink Display
+This is a plugin for TRMNL to add upcoming cyber security conferences deadlines to TRMNL
