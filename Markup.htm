@@ -1,0 +1,64 @@
+<div class="screen">
+  <div class="view view--full">
+    <div class="layout layout--col gap--xsmall">
+      <!-- Main Title -->
+      <div class="title">
+        <strong>Upcoming Security Conference Deadlines</strong>
+      </div>
+      
+      {% if conferences and conferences.size > 0 %}
+        <!-- 2-column grid, up to 8 conferences -->
+        <div class="grid grid--cols-2 gap--small">
+          {% assign counter = 0 %}
+          {% for conf in conferences limit:8 %}
+            {% assign counter = counter | plus: 1 %}
+            <div class="item">
+              <div class="meta">
+                <span class="index"><strong>{{ counter }}</strong></span> <!-- Ensure bold numbering -->
+              </div>
+              <div class="content">
+                <!-- Conference Name and Year -->
+                <span class="title"><strong>{{ conf.name }} ({{ conf.year }})</strong></span>
+                
+                <!-- Deadline Information -->
+                {% if conf.total_deadlines and conf.deadline_position and conf.total_deadlines > 1 %}
+                  <span class="title title--small">
+                    <strong>Deadline ({{ conf.deadline_position }}/{{ conf.total_deadlines }}):</strong> <strong>{{ conf.next_deadline }}</strong>
+                  </span>
+                {% else %}
+                  <span class="title title--small">
+                    <strong>Deadline (1/1):</strong> <strong>{{ conf.next_deadline }}</strong>
+                  </span>
+                {% endif %}
+                
+                <!-- Conference Location -->
+                {% if conf.place %}
+                  <span class="label label--small label--underline"><strong>{{ conf.place }}</strong></span>
+                {% endif %}
+              </div>
+            </div>
+          {% endfor %}
+        </div>
+      {% else %}
+        <!-- No Upcoming Deadlines -->
+        <div class="item">
+          <div class="content">
+            <span class="title title--small"><strong>No upcoming deadlines</strong></span>
+          </div>
+        </div>
+      {% endif %}
+      
+      <!-- Last Updated -->
+      <div class="flex gap--small">
+        <span class="label label--small">Last updated: <strong>{{ last_updated }}</strong></span>
+      </div>
+    </div>
+    
+    <!-- Title Bar Section -->
+    <div class="title_bar">
+      <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg" />
+      <span class="title"><strong>Security Deadlines</strong></span>
+      <span class="instance"><strong>Copyright Ali Abbasi</strong></span>
+    </div>
+  </div>
+</div>
