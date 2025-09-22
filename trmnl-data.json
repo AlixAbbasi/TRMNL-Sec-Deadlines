@@ -67,7 +67,7 @@
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
-      "tier": "TIER1",
+      "tier": "TIER2",
       "category": "Security & Privacy",
       "rank": 8,
       "urgency": {
@@ -94,7 +94,7 @@
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
-      "tier": "TIER1",
+      "tier": "TIER2",
       "category": "Security & Privacy",
       "rank": 10,
       "urgency": {
@@ -121,7 +121,7 @@
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
-      "tier": "TIER1",
+      "tier": "TIER2",
       "category": "Dependable Systems",
       "rank": 11,
       "urgency": {
@@ -178,6 +178,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-09-22 13:21:23",
-  "last_updated_friendly": "Sep 22, 13:21"
+  "last_updated": "2025-09-22 15:43:44",
+  "last_updated_friendly": "Sep 22, 15:43"
 }
