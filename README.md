@@ -2,14 +2,14 @@
 
 This is an automated plugin for TRMNL that displays upcoming cybersecurity conference deadlines.
 
-## ✨ Features
+## Features
 
 - **Automated Updates**: Updates every 3 hours using GitHub Actions
 - **No Manual Work**: Set it up once, runs forever with automatic TRMNL refresh
 - **Real-time Data**: Fetches from the official sec-deadlines repository
 - **Smart Filtering**: Only shows conferences you care about
 
-## 🚀 Quick Setup (5 minutes)
+## Quick Setup (5 minutes)
 
 ### Step 1: Enable GitHub Pages
 
@@ -24,7 +24,7 @@ This is an automated plugin for TRMNL that displays upcoming cybersecurity confe
 1. Go to the **Actions** tab in your repository
 2. Click "Update TRMNL Security Deadlines"
 3. Click **Run workflow** → **Run workflow**
-4. Wait 2-3 minutes for it to complete ✅
+4. Wait 2-3 minutes for it to complete 
 5. Note the polling URL in the action output
 
 ### Step 3: Configure TRMNL Plugin
@@ -43,13 +43,13 @@ This is an automated plugin for TRMNL that displays upcoming cybersecurity confe
 - **No manual clicking**: TRMNL refreshes when data changes
 - **Monitor via Actions**: See update logs in GitHub Actions tab
 
-## 🎯 Why This Works Better
+## Why This Works Better
 
 ### **Before (Webhook Strategy):**
-❌ GitHub Action sends data → TRMNL receives data → **Manual "Force Refresh" needed**
+GitHub Action sends data → TRMNL receives data → **Manual "Force Refresh" needed**
 
 ### **After (Polling Strategy):**
-✅ GitHub Action generates data → TRMNL polls data automatically → **Auto-refresh when data changes**
+GitHub Action generates data → TRMNL polls data automatically → **Auto-refresh when data changes**
 
 **Key Benefits:**
 - **No more manual refreshing** - TRMNL checks automatically
@@ -83,32 +83,32 @@ TRACKED_NAMES = [
 ]
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 1. **Actions failing?** Check the logs in GitHub Actions tab
 2. **No updates on TRMNL?** Verify your API key and Plugin UUID in secrets
 3. **Wrong conferences?** Update the `TRACKED_NAMES` list
 4. **Manual trigger**: Use "Run workflow" button in Actions tab
 
-## 🎨 Plugin Improvements
+## Plugin Improvements
 
 ### **Enhanced Core Features**
 
-✅ **Smart Deadline Urgency**: Color-coded urgency levels (Urgent, Soon, Upcoming, Distant)  
-✅ **Conference Rankings**: TOP4, TIER1, TIER2, and Workshop classifications  
-✅ **Multi-Deadline Support**: Shows position (e.g., "2/3") for conferences with multiple deadlines  
-✅ **Enhanced Metadata**: Venue, type, location, and conference descriptions  
-✅ **Smart Filtering**: Configurable options for workshops, date ranges, and display limits  
-✅ **Statistics Dashboard**: Quick overview of urgent deadlines and top-tier conferences  
+**Smart Deadline Urgency**: Color-coded urgency levels (Urgent, Soon, Upcoming, Distant)  
+**Conference Rankings**: TOP4, TIER1, TIER2, and Workshop classifications  
+**Multi-Deadline Support**: Shows position (e.g., "2/3") for conferences with multiple deadlines  
+**Enhanced Metadata**: Venue, type, location, and conference descriptions  
+**Smart Filtering**: Configurable options for workshops, date ranges, and display limits  
+**Statistics Dashboard**: Quick overview of urgent deadlines and top-tier conferences  
 
 ### **Visual Presentation Improvements**
 
-✅ **Highlighted Urgent Deadlines**: Next urgent deadline prominently displayed  
-✅ **Clean Information Hierarchy**: Title, urgency, venue, location in organized layout  
-✅ **Visual Urgency Indicators**: Badges and styling for different urgency levels  
-✅ **Conference Status Icons**: ⭐ for TOP4 conferences, badges for urgent deadlines  
-✅ **Responsive Layout**: Optimized for TRMNL's e-ink display constraints  
-✅ **Smart Truncation**: Handles long conference names and locations gracefully  
+**Highlighted Urgent Deadlines**: Next urgent deadline prominently displayed  
+**Clean Information Hierarchy**: Title, urgency, venue, location in organized layout  
+**Visual Urgency Indicators**: Badges and styling for different urgency levels  
+**Conference Status Icons**: for TOP4 conferences, badges for urgent deadlines  
+**Responsive Layout**: Optimized for TRMNL's e-ink display constraints  
+**Smart Truncation**: Handles long conference names and locations gracefully  
 
 ### **Advanced Configuration**
 
