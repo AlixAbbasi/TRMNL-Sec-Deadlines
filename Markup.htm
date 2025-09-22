@@ -1,15 +1,40 @@
-<div class="screen">
-  <div class="view view--full">
-    <div class="layout layout--col gap--xsmall">
-      <!-- Main Title -->
-      <div class="title">
-        <strong>Upcoming Security Conference Deadlines</strong>
-      </div>
-      
-      {% if conferences and conferences.size > 0 %}
-        <!-- Enhanced Stats with Legend (Bold for E-ink) -->
+<div clas        <!-- Enhanced Stats with Legend (Larger                <                  <!--                  {% if conf.tier == 'TOP4' %}
+                    <span class="label"><strong>★</strong></span>
+                  {% elsif conf.tier == 'TIER2' %}
+                    <span class="label"><strong>⭐</strong></span>
+                  {% elsif conf.tier == 'TIER3' %}
+                    <span class="label"><strong>•</strong></span>
+                  {% elsif conf.tier == 'WORKSHOP' %}
+                    <span class="label"><strong>🔬</strong></span>
+                  {% endif %}indicator (Bold) -->
+                {% if conf.urgency.level == 'URGENT' %}
+                  <span class="label"><strong>🔥 URGENT</strong></span>
+                {% elsif conf.urgency.level == 'SOON' %}
+                  <span class="label"><strong>⚡ SOON</strong></span>
+                {% elsif conf.urgency.level == 'CLOSE' %}
+                  <span class="label"><strong>⏰ CLOSE</strong></span>
+                {% endif %}      <!-- Conference Name, Year, and Tier (Larger tier symbols) -->
+                <span class="title">
+                  <strong>{{ conf.name }} ({{ conf.year }})</strong>
+                  {% if conf.tier == 'TOP4' %}
+                    <span class="label"><strong>★</strong></span>
+                  {% elsif conf.tier == 'TIER2' %}
+                    <span class="label"><strong>⭐</strong></span>
+                  {% elsif conf.tier == 'TIER3' %}
+                    <span class="label"><strong>•</strong></span>
+                  {% elsif conf.tier == 'WORKSHOP' %}
+                    <span class="label"><strong>🔬</strong></span>
+                  {% endif %}
+                </span>ndicator (Larger fonts) -->
+                {% if conf.urgency.level == 'URGENT' %}
+                  <span class="label"><strong>🔥 URGENT</strong></span>
+                {% elsif conf.urgency.level == 'SOON' %}
+                  <span class="label"><strong>⚡ SOON</strong></span>
+                {% elsif conf.urgency.level == 'CLOSE' %}
+                  <span class="label"><strong>⏰ CLOSE</strong></span>
+                {% endif %}or E-ink) -->
         <div class="flex gap--small">
-          <span class="label label--small"><strong>📊 {{ conferences.size }} deadlines</strong></span>
+          <span class="label"><strong>📊 {{ conferences.size }} deadlines</strong></span>
           {% assign urgent_count = 0 %}
           {% assign top4_count = 0 %}
           {% for conf in conferences %}
@@ -21,10 +46,37 @@
             {% endif %}
           {% endfor %}
           {% if urgent_count > 0 %}
-            <span class="label label--small"><strong>🔥 {{ urgent_count }} urgent</strong></span>
+            <span class="label"><strong>🔥 {{ urgent_count }} urgent</strong></span>
           {% endif %}
           {% if top4_count > 0 %}
-            <span class="label label--small"><strong>★ {{ top4_count }} TOP4</strong></span>
+            <span class="label"><strong>★ {{ top4_count }} TOP4</strong></span>
+          {% endif %}
+        </div>lass="view view--full">
+    <div class="layout layout--col gap--xsmall">
+      <!-- Main Title -->
+      <div class="title">
+        <strong>Upcoming Security Conference Deadlines</strong>
+      </div>
+      
+      {% if conferences and conferences.size > 0 %}
+        <!-- Enhanced Stats with Legend (Bold for E-ink) -->
+        <div class="flex gap--small">
+          <span class="label"><strong>📊 {{ conferences.size }} deadlines</strong></span>
+          {% assign urgent_count = 0 %}
+          {% assign top4_count = 0 %}
+          {% for conf in conferences %}
+            {% if conf.urgency.level == 'URGENT' or conf.urgency.level == 'SOON' %}
+              {% assign urgent_count = urgent_count | plus: 1 %}
+            {% endif %}
+            {% if conf.tier == 'TOP4' %}
+              {% assign top4_count = top4_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if urgent_count > 0 %}
+            <span class="label"><strong>🔥 {{ urgent_count }} urgent</strong></span>
+          {% endif %}
+          {% if top4_count > 0 %}
+            <span class="label"><strong>★ {{ top4_count }} TOP4</strong></span>
           {% endif %}
         </div>
         
@@ -38,11 +90,11 @@
                 <span class="index"><strong>{{ counter }}</strong></span>
                 <!-- Urgency indicator (Bold) -->
                 {% if conf.urgency.level == 'URGENT' %}
-                  <span class="label label--small"><strong>🔥 URGENT</strong></span>
+                  <span class="label"><strong>🔥 URGENT</strong></span>
                 {% elsif conf.urgency.level == 'SOON' %}
-                  <span class="label label--small"><strong>⚡ SOON</strong></span>
+                  <span class="label"><strong>⚡ SOON</strong></span>
                 {% elsif conf.urgency.level == 'CLOSE' %}
-                  <span class="label label--small"><strong>⏰ CLOSE</strong></span>
+                  <span class="label"><strong>⏰ CLOSE</strong></span>
                 {% endif %}
               </div>
               <div class="content">
@@ -50,31 +102,31 @@
                 <span class="title">
                   <strong>{{ conf.name }} ({{ conf.year }})</strong>
                   {% if conf.tier == 'TOP4' %}
-                    <span class="label label--small"><strong>★</strong></span>
+                    <span class="label"><strong>★</strong></span>
                   {% elsif conf.tier == 'TIER2' %}
-                    <span class="label label--small"><strong>⭐</strong></span>
+                    <span class="label"><strong>⭐</strong></span>
                   {% elsif conf.tier == 'TIER3' %}
-                    <span class="label label--small"><strong>•</strong></span>
+                    <span class="label"><strong>•</strong></span>
                   {% elsif conf.tier == 'WORKSHOP' %}
-                    <span class="label label--small"><strong>🔬</strong></span>
+                    <span class="label"><strong>🔬</strong></span>
                   {% endif %}
                 </span>
                 
                 <!-- Deadline Information with Enhanced Details (Bold) -->
                 {% if conf.total_deadlines and conf.deadline_position and conf.total_deadlines > 1 %}
-                  <span class="title title--small">
+                  <span class="title">
                     <strong>{{ conf.deadline_formatted }}</strong>
-                    <span class="label label--small"><strong>({{ conf.days_until }}d • {{ conf.deadline_position }}/{{ conf.total_deadlines }})</strong></span>
+                    <span class="label"><strong>({{ conf.days_until }}d • {{ conf.deadline_position }}/{{ conf.total_deadlines }})</strong></span>
                   </span>
                 {% else %}
-                  <span class="title title--small">
+                  <span class="title">
                     <strong>{{ conf.deadline_formatted }}</strong>
-                    <span class="label label--small"><strong>({{ conf.days_until }} days)</strong></span>
+                    <span class="label"><strong>({{ conf.days_until }} days)</strong></span>
                   </span>
                 {% endif %}
                 
                 <!-- Conference Date & Location (Bold for E-ink) -->
-                <span class="label label--small">
+                <span class="label">
                   {% if conf.date %}<strong>{{ conf.date }}</strong>{% endif %}
                   {% if conf.place %}<strong> • {{ conf.place }}</strong>{% endif %}
                 </span>
