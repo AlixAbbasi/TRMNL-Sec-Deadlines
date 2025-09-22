@@ -1,11 +1,15 @@
 import requests
 import yaml
+import os
 from datetime import datetime, timedelta
 from dateutil import parser
 import pytz
+import re
 
-TRMNL_API_KEY = "YOUR DEVELOPER API KEY HERE"
-PLUGIN_UUID = "YOUR PLUGIN ID HERE"
+# Get credentials from environment variables (for GitHub Actions)
+# Fallback to placeholder values for local testing
+TRMNL_API_KEY = os.getenv("TRMNL_API_KEY", "YOUR DEVELOPER API KEY HERE")
+PLUGIN_UUID = os.getenv("PLUGIN_UUID", "YOUR PLUGIN ID HERE")
 TRMNL_WEBHOOK_URL = f"https://usetrmnl.com/api/custom_plugins/{PLUGIN_UUID}"
 
 TRACKED_NAMES = [
@@ -14,9 +18,86 @@ TRACKED_NAMES = [
     "SpaceSec", "ESORICS", "CPSS", "ASIACCS", "WiSec", "FUZZING", "DSN"
 ]
 
+# Configuration options
+CONFIG = {
+    "max_days_ahead": 365,  # Don't show deadlines more than 1 year away
+    "include_workshops": True,  # Set to False to exclude workshops
+    "prioritize_top_tier": True,  # Show top tier conferences first
+    "show_expired_days": 7,  # Show expired deadlines for X days (set to 0 to hide)
+    "max_display_items": 15,  # Maximum conferences to show
+}
+
+# Conference ranking and categories for better display
+CONFERENCE_TIERS = {
+    "S&P (Oakland)": {"tier": "TOP4", "category": "Security & Privacy", "rank": 1},
+    "USENIX Security": {"tier": "TOP4", "category": "Security & Privacy", "rank": 2},
+    "CCS": {"tier": "TOP4", "category": "Security & Privacy", "rank": 3},
+    "NDSS": {"tier": "TOP4", "category": "Security & Privacy", "rank": 4},
+    "ACSAC": {"tier": "TIER1", "category": "Security Applications", "rank": 5},
+    "RAID": {"tier": "TIER1", "category": "Security Defense", "rank": 6},
+    "DIMVA": {"tier": "TIER1", "category": "Malware & Vulnerabilities", "rank": 7},
+    "Euro S&P": {"tier": "TIER1", "category": "Security & Privacy", "rank": 8},
+    "ESORICS": {"tier": "TIER1", "category": "Security Research", "rank": 9},
+    "ASIACCS": {"tier": "TIER1", "category": "Security & Privacy", "rank": 10},
+    "DSN": {"tier": "TIER1", "category": "Dependable Systems", "rank": 11},
+    "CPSS": {"tier": "WORKSHOP", "category": "Cyber-Physical", "rank": 12},
+    "WiSec": {"tier": "TIER2", "category": "Wireless Security", "rank": 13},
+    "FUZZING": {"tier": "WORKSHOP", "category": "Testing", "rank": 14},
+    "SpaceSec": {"tier": "WORKSHOP", "category": "Space Security", "rank": 15}
+}
+
 # Default to AoE (UTC-12) if no timezone specified
 DEFAULT_TZ = pytz.timezone("Etc/GMT+12")  # UTC-12 equivalent
 TARGET_TZ = pytz.timezone("Europe/Berlin")
+
+def get_urgency_info(deadline_dt, now_dt):
+    """Calculate urgency level and friendly time remaining"""
+    time_diff = deadline_dt - now_dt
+    days = time_diff.days
+    hours = time_diff.seconds // 3600
+    
+    if days < 0:
+        return {"level": "EXPIRED", "text": "Expired", "class": "expired"}
+    elif days == 0:
+        return {"level": "URGENT", "text": f"{hours}h left", "class": "urgent"}
+    elif days <= 1:
+        return {"level": "URGENT", "text": f"{days}d {hours}h", "class": "urgent"}
+    elif days <= 7:
+        return {"level": "SOON", "text": f"{days} days", "class": "soon"}
+    elif days <= 30:
+        return {"level": "UPCOMING", "text": f"{days} days", "class": "upcoming"}
+    else:
+        return {"level": "DISTANT", "text": f"{days} days", "class": "distant"}
+
+def extract_conference_info(conf):
+    """Extract enhanced conference information"""
+    description = conf.get('description', '')
+    tags = conf.get('tags', [])
+    
+    # Determine conference type
+    conf_type = "Conference"
+    if "SHOP" in tags:
+        conf_type = "Workshop"
+    elif "CONF" in tags:
+        conf_type = "Conference"
+    
+    # Extract venue/organization from description
+    venue = "Unknown"
+    if "IEEE" in description:
+        venue = "IEEE"
+    elif "ACM" in description:
+        venue = "ACM"
+    elif "USENIX" in description:
+        venue = "USENIX"
+    elif "ISOC" in description:
+        venue = "ISOC"
+    
+    return {
+        "type": conf_type,
+        "venue": venue,
+        "description": description,
+        "tags": tags
+    }
 
 def get_conference_timezone(conf):
     tz_str = conf.get('timezone', None)
@@ -122,18 +203,47 @@ def parse_deadline(dl_str, source_tz, conf_year):
     return dt
 
 def main():
+    # Check if we have the required credentials
+    if TRMNL_API_KEY == "YOUR DEVELOPER API KEY HERE" or PLUGIN_UUID == "YOUR PLUGIN ID HERE":
+        print("❌ Error: TRMNL_API_KEY and PLUGIN_UUID must be set as environment variables")
+        print("For local testing, set them manually in the script")
+        return
+    
+    print("🔄 Starting TRMNL Security Deadlines update...")
+    print(f"📅 Current time: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
+    
     url = "https://raw.githubusercontent.com/sec-deadlines/sec-deadlines.github.io/refs/heads/master/_data/conferences.yml"
-    response = requests.get(url)
-    response.raise_for_status()
-    raw_yaml = response.text
-    conferences_data = yaml.safe_load(raw_yaml)
+    
+    try:
+        print("📥 Fetching conference data...")
+        response = requests.get(url)
+        response.raise_for_status()
+        raw_yaml = response.text
+        conferences_data = yaml.safe_load(raw_yaml)
+        print(f"✅ Successfully loaded {len(conferences_data)} conferences")
+    except Exception as e:
+        print(f"❌ Error fetching conference data: {e}")
+        return
 
     now_local = datetime.now(TARGET_TZ)
     filtered = []
+    
+    # Track some statistics
+    total_processed = 0
+    excluded_workshops = 0
+    excluded_too_far = 0
   
     for conf in conferences_data:
         conf_name = conf.get('name')
         if conf_name in TRACKED_NAMES:
+            total_processed += 1
+            
+            # Check if we should exclude workshops
+            conf_info = extract_conference_info(conf)
+            if not CONFIG["include_workshops"] and conf_info["type"] == "Workshop":
+                excluded_workshops += 1
+                continue
+            
             deadlines = conf.get('deadline', [])
             if not deadlines:
                 continue
@@ -147,30 +257,129 @@ def main():
                 parsed_all.append(dt_local)
 
             parsed_all.sort()
-            future_deadlines = [d for d in parsed_all if d > now_local]
+            
+            # Filter deadlines based on config
+            valid_deadlines = []
+            for dl in parsed_all:
+                days_diff = (dl - now_local).days
+                
+                # Include if within range or recently expired
+                if days_diff >= -CONFIG["show_expired_days"] and days_diff <= CONFIG["max_days_ahead"]:
+                    valid_deadlines.append(dl)
+                elif days_diff > CONFIG["max_days_ahead"]:
+                    excluded_too_far += 1
+            
+            if not valid_deadlines:
+                continue
+                
+            # Get the next valid deadline (could be expired if within show_expired_days)
+            future_deadlines = [d for d in valid_deadlines if d > now_local]
+            next_dl = future_deadlines[0] if future_deadlines else valid_deadlines[-1]
+            
+            total_count = len(parsed_all)
+            deadline_position = parsed_all.index(next_dl) + 1
+            
+            # Get enhanced conference info
+            conf_info = extract_conference_info(conf)
+            tier_info = CONFERENCE_TIERS.get(conf_name, {
+                "tier": "OTHER", "category": "General", "rank": 99
+            })
+            urgency_info = get_urgency_info(next_dl, now_local)
+            
+            # Calculate days until deadline
+            days_until = (next_dl - now_local).days
+            
+            # Format conference date nicely
+            conf_date = conf.get('date', 'TBD')
+            if conf_date and conf_date != 'TBD':
+                # Clean up date format
+                conf_date = re.sub(r'\s+', ' ', conf_date.strip())
+            
+            # Create short name for display
+            short_name = conf_name
+            if conf_name == "S&P (Oakland)":
+                short_name = "IEEE S&P"
+            elif conf_name == "USENIX Security":
+                short_name = "USENIX Sec"
+            elif "Euro S&P" in conf_name:
+                short_name = "Euro S&P"
 
-            if future_deadlines:
-                next_dl = future_deadlines[0]
-                total_count = len(parsed_all)
-                deadline_position = parsed_all.index(next_dl) + 1
+            conf_record = {
+                "name": conf_name,
+                "short_name": short_name,
+                "year": conf.get('year'),
+                "place": conf.get('place', 'TBD'),
+                "date": conf_date,
+                "link": conf.get('link'),
+                "next_deadline": next_dl.strftime("%Y-%m-%d %H:%M:%S"),
+                "deadline_formatted": next_dl.strftime("%b %d, %H:%M"),
+                "days_until": days_until,
+                "total_deadlines": total_count,
+                "deadline_position": deadline_position,
+                "remaining_deadlines": total_count - deadline_position,
+                
+                # Enhanced metadata
+                "tier": tier_info["tier"],
+                "category": tier_info["category"],
+                "rank": tier_info["rank"],
+                "urgency": urgency_info,
+                "venue": conf_info["venue"],
+                "type": conf_info["type"],
+                "description": conf_info["description"],
+                
+                # Additional deadline info
+                "is_multi_deadline": total_count > 1,
+                "comment": conf.get('comment', ''),
+            }
+            filtered.append(conf_record)
 
-                conf_record = {
-                    "name": conf_name,
-                    "year": conf.get('year'),
-                    "place": conf.get('place'),
-                    "link": conf.get('link'),
-                    "next_deadline": next_dl.strftime("%Y-%m-%d %H:%M:%S"),
-                    "total_deadlines": total_count,
-                    "deadline_position": deadline_position
-                }
-                filtered.append(conf_record)
-
-    filtered.sort(key=lambda c: parser.isoparse(c["next_deadline"]))
+    # Smart sorting: prioritize urgent deadlines and top tier conferences
+    if CONFIG["prioritize_top_tier"]:
+        filtered.sort(key=lambda c: (
+            0 if c["urgency"]["level"] in ["URGENT", "SOON"] else 1,  # Urgent first
+            c["rank"],  # Then by rank
+            parser.isoparse(c["next_deadline"])  # Then by deadline
+        ))
+    else:
+        filtered.sort(key=lambda c: parser.isoparse(c["next_deadline"]))
+    
+    # Limit results
+    filtered = filtered[:CONFIG["max_display_items"]]
+    
+    print(f"📊 Found {len(filtered)} conferences with upcoming deadlines")
+    print(f"📈 Processed {total_processed} tracked conferences")
+    if excluded_workshops > 0:
+        print(f"🏗️  Excluded {excluded_workshops} workshops")
+    if excluded_too_far > 0:
+        print(f"📅 Excluded {excluded_too_far} deadlines too far in future")
+    
+    # Generate summary statistics
+    urgent_count = len([c for c in filtered if c["urgency"]["level"] in ["URGENT", "SOON"]])
+    top_tier_count = len([c for c in filtered if c["tier"] == "TOP4"])
+    workshop_count = len([c for c in filtered if c["type"] == "Workshop"])
+    expired_count = len([c for c in filtered if c["days_until"] < 0])
+    
+    # Find next most urgent deadline
+    next_urgent = None
+    if urgent_count > 0:
+        urgent_confs = [c for c in filtered if c["urgency"]["level"] in ["URGENT", "SOON"]]
+        urgent_confs.sort(key=lambda c: parser.isoparse(c["next_deadline"]))
+        next_urgent = urgent_confs[0]
 
     payload = {
         "merge_variables": {
             "conferences": filtered,
-            "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+            "stats": {
+                "total_conferences": len(filtered),
+                "urgent_count": urgent_count,
+                "top_tier_count": top_tier_count,
+                "workshop_count": workshop_count,
+                "expired_count": expired_count,
+                "next_urgent": next_urgent,
+                "config": CONFIG  # Include config for template use
+            },
+            "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
+            "last_updated_friendly": datetime.now().strftime("%b %d, %H:%M")
         }
     }
 
@@ -179,12 +388,16 @@ def main():
         "Authorization": f"Bearer {TRMNL_API_KEY}"
     }
 
-    print("Posting data to TRMNL webhook...")
-    resp = requests.post(TRMNL_WEBHOOK_URL, json=payload, headers=headers)
-    if resp.status_code == 200:
-        print("Data sent successfully to TRMNL!")
-    else:
-        print(f"Error {resp.status_code}: {resp.text}")
+    try:
+        print("📤 Sending data to TRMNL...")
+        resp = requests.post(TRMNL_WEBHOOK_URL, json=payload, headers=headers)
+        if resp.status_code == 200:
+            print("✅ Data sent successfully to TRMNL!")
+            print("🖥️  Your TRMNL display will update on its next refresh cycle")
+        else:
+            print(f"❌ Error {resp.status_code}: {resp.text}")
+    except Exception as e:
+        print(f"❌ Error sending to TRMNL: {e}")
 
 if __name__ == "__main__":
     main()

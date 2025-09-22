@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://usetrmnl.com/css/latest/plugins.css">
+    <script src="https://usetrmnl.com/js/latest/plugins.js"></script>
+    <style>
+        /* Custom styles for security deadlines */
+        .urgency-urgent { background: #000; color: #fff; }
+        .urgency-soon { background: #666; color: #fff; }
+        .urgency-upcoming { background: #ccc; color: #000; }
+        .urgency-distant { background: #f0f0f0; color: #000; }
+        
+        .tier-top4 { font-weight: bold; }
+        .tier-tier1 { font-weight: 600; }
+        .tier-workshop { font-style: italic; }
+        
+        .deadline-item {
+            border-bottom: 1px dashed #ccc;
+            padding: 8px 0;
+        }
+        
+        .deadline-item:last-child {
+            border-bottom: none;
+        }
+        
+        .conf-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 4px;
+        }
+        
+        .conf-meta {
+            font-size: 0.8em;
+            color: #666;
+            margin-top: 2px;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 12px;
+            margin: 12px 0;
+            text-align: center;
+        }
+        
+        .stat-item {
+            background: #f8f8f8;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        .stat-number {
+            font-size: 1.4em;
+            font-weight: bold;
+            display: block;
+        }
+        
+        .stat-label {
+            font-size: 0.7em;
+            color: #666;
+            text-transform: uppercase;
+        }
+        
+        .next-urgent {
+            background: #000;
+            color: #fff;
+            padding: 12px;
+            margin: 12px 0;
+            border-radius: 6px;
+            text-align: center;
+        }
+        
+        .next-urgent .conf-name {
+            font-weight: bold;
+            font-size: 1.1em;
+        }
+        
+        .next-urgent .deadline-time {
+            font-size: 0.9em;
+            margin-top: 4px;
+        }
+    </style>
+</head>
+<body class="environment trmnl">
+    <div class="screen">
+        <div class="view view--full">
+            <div class="layout">
+                <div class="columns">
+                    <div class="column">
+                        
+                        <!-- Header with stats -->
+                        {% if stats.next_urgent %}
+                        <div class="next-urgent">
+                            <div class="conf-name">{{ stats.next_urgent.short_name }} {{ stats.next_urgent.year }}</div>
+                            <div class="deadline-time">{{ stats.next_urgent.urgency.text }} • {{ stats.next_urgent.deadline_formatted }}</div>
+                        </div>
+                        {% endif %}
+                        
+                        <!-- Quick stats -->
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">{{ stats.total_conferences }}</span>
+                                <span class="stat-label">Total</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">{{ stats.urgent_count }}</span>
+                                <span class="stat-label">Urgent</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">{{ stats.top_tier_count }}</span>
+                                <span class="stat-label">Top Tier</span>
+                            </div>
+                        </div>
+                        
+                        <!-- Conference deadlines list -->
+                        <div class="markdown">
+                            {% for conf in conferences limit: 12 %}
+                            <div class="deadline-item tier-{{ conf.tier | downcase }}">
+                                <div class="conf-header">
+                                    <div>
+                                        <strong>{{ conf.short_name }}</strong>
+                                        <span class="urgency-badge urgency-{{ conf.urgency.class }}" style="
+                                            padding: 2px 6px; 
+                                            border-radius: 3px; 
+                                            font-size: 0.7em; 
+                                            margin-left: 8px;
+                                            {% if conf.urgency.class == 'urgent' %}background: #000; color: #fff;{% endif %}
+                                            {% if conf.urgency.class == 'soon' %}background: #666; color: #fff;{% endif %}
+                                            {% if conf.urgency.class == 'upcoming' %}background: #ccc; color: #000;{% endif %}
+                                            {% if conf.urgency.class == 'distant' %}background: #f0f0f0; color: #000;{% endif %}
+                                        ">{{ conf.urgency.text }}</span>
+                                    </div>
+                                    <div style="text-align: right; font-size: 0.85em;">
+                                        <div>{{ conf.deadline_formatted }}</div>
+                                        {% if conf.is_multi_deadline %}
+                                        <div style="font-size: 0.7em; color: #666;">
+                                            {{ conf.deadline_position }}/{{ conf.total_deadlines }}
+                                        </div>
+                                        {% endif %}
+                                    </div>
+                                </div>
+                                
+                                <div class="conf-meta">
+                                    <div>
+                                        {{ conf.venue }} {{ conf.year }} • {{ conf.place | truncate: 30 }}
+                                        {% if conf.tier == 'TOP4' %}
+                                        <span style="font-weight: bold; color: #000;"> ⭐ TOP</span>
+                                        {% endif %}
+                                    </div>
+                                    {% if conf.comment %}
+                                    <div style="font-size: 0.7em; color: #888; margin-top: 2px;">
+                                        {{ conf.comment | truncate: 60 }}
+                                    </div>
+                                    {% endif %}
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
+                        
+                        <!-- Footer with last update -->
+                        <div style="margin-top: 16px; text-align: center; font-size: 0.7em; color: #666; border-top: 1px solid #ddd; padding-top: 8px;">
+                            Updated {{ last_updated_friendly }}
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="title_bar">
+                <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg" />
+                <span class="title">Security Deadlines</span>
+                <span class="instance">{{ stats.urgent_count }} urgent</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

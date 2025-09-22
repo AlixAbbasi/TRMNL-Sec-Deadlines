@@ -1,0 +1,37 @@
+name: Update TRMNL Security Deadlines
+
+# When to run this automation
+on:
+  schedule:
+    # Run every 6 hours (at 00:00, 06:00, 12:00, 18:00 UTC)
+    - cron: '0 */6 * * *'
+  
+  # Allow manual triggering from GitHub website
+  workflow_dispatch:
+
+jobs:
+  update-deadlines:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Get your code from the repository
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      # Set up Python environment
+      - name: Set up Python 3.11
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      # Install required Python packages
+      - name: Install dependencies
+        run: |
+          pip install requests pyyaml python-dateutil pytz
+      
+      # Run your script with secrets
+      - name: Update TRMNL with latest deadlines
+        env:
+          TRMNL_API_KEY: ${{ secrets.TRMNL_API_KEY }}
+          PLUGIN_UUID: ${{ secrets.PLUGIN_UUID }}
+        run: python push_conferences.py
