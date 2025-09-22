@@ -9,6 +9,12 @@ on:
   # Allow manual triggering from GitHub website
   workflow_dispatch:
 
+# Add permissions for GitHub Pages deployment
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   update-deadlines:
     runs-on: ubuntu-latest
@@ -39,13 +45,30 @@ jobs:
           head -20 trmnl-data.json
       
       # Deploy to GitHub Pages for TRMNL polling
+      - name: Configure git
+        run: |
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+      
       - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v3
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: gh-pages
-          keep_files: false
+        run: |
+          # Create a clean gh-pages branch
+          git checkout --orphan gh-pages
+          
+          # Remove all files except our data file
+          git rm -rf .
+          git clean -fxd
+          
+          # Add only the data file we need
+          echo '{"conferences": []}' > trmnl-data.json
+          python generate_data.py
+          
+          # Add and commit
+          git add trmnl-data.json
+          git commit -m "Update conference data $(date)"
+          
+          # Push to gh-pages branch
+          git push origin gh-pages --force
           
       - name: Show polling URL
         run: |
