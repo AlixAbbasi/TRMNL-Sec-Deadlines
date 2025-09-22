@@ -11,9 +11,10 @@ on:
 
 # Add permissions for GitHub Pages deployment
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
+  actions: read
 
 jobs:
   update-deadlines:
@@ -51,6 +52,8 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
       - name: Deploy to GitHub Pages
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           # Copy the generated data file to a safe location
           cp trmnl-data.json /tmp/trmnl-data.json
@@ -69,8 +72,8 @@ jobs:
           git add trmnl-data.json
           git commit -m "Update conference data $(date)"
           
-          # Push to gh-pages branch
-          git push origin gh-pages --force
+          # Push to gh-pages branch with authentication
+          git push https://x-access-token:${GITHUB_TOKEN}@github.com/AlixAbbasi/TRMNL-Sec-Deadlines.git gh-pages --force
           
       - name: Show polling URL
         run: |
