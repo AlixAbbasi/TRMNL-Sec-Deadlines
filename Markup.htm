@@ -7,7 +7,7 @@
       </div>
       
       {% if conferences and conferences.size > 0 %}
-        <!-- Enhanced Stats -->
+        <!-- Enhanced Stats with Legend -->
         <div class="flex gap--small">
           <span class="label label--small">📊 {{ conferences.size }} deadlines</span>
           {% assign urgent_count = 0 %}
@@ -28,10 +28,10 @@
           {% endif %}
         </div>
         
-        <!-- 2-column grid, up to 12 conferences -->
+        <!-- 2-column grid, maximizing vertical space -->
         <div class="grid grid--cols-2 gap--small">
           {% assign counter = 0 %}
-          {% for conf in conferences limit:12 %}
+          {% for conf in conferences limit:16 %}
             {% assign counter = counter | plus: 1 %}
             <div class="item">
               <div class="meta">
@@ -50,13 +50,13 @@
                 <span class="title">
                   <strong>{{ conf.name }} ({{ conf.year }})</strong>
                   {% if conf.tier == 'TOP4' %}
-                    <span class="label label--small">★ TOP4</span>
+                    <span class="label label--small">★</span>
                   {% elsif conf.tier == 'TIER2' %}
-                    <span class="label label--small">⭐ TIER2</span>
+                    <span class="label label--small">⭐</span>
                   {% elsif conf.tier == 'TIER3' %}
-                    <span class="label label--small">• TIER3</span>
+                    <span class="label label--small">•</span>
                   {% elsif conf.tier == 'WORKSHOP' %}
-                    <span class="label label--small">🔬 WORKSHOP</span>
+                    <span class="label label--small">🔬</span>
                   {% endif %}
                 </span>
                 
