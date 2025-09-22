@@ -8,7 +8,7 @@
     {% if conferences and conferences.size > 0 %}
       <!-- Enhanced Stats with Legend (Bold for E-ink) -->
       <div class="flex gap--small">
-        <span class="label"><strong>{{ conferences.size }} deadlines</span>
+        <span class="label"><strong>{{ conferences.size }} deadlines</strong></span>
         {% assign urgent_count = 0 %}
         {% assign top4_count = 0 %}
         {% for conf in conferences %}
@@ -20,10 +20,10 @@
           {% endif %}
         {% endfor %}
         {% if urgent_count > 0 %}
-          <span class="label"><strong>{{ urgent_count }} urgent</strong></span>
+          <span class="label"><strong>• {{ urgent_count }} urgent</strong></span>
         {% endif %}
         {% if top4_count > 0 %}
-          <span class="label"><strong>{{ top4_count }} TOP4</strong></span>
+          <span class="label"><strong>• {{ top4_count }} TOP4</strong></span>
         {% endif %}
       </div>
       
