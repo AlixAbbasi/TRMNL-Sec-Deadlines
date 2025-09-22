@@ -7,27 +7,64 @@
       </div>
       
       {% if conferences and conferences.size > 0 %}
+        <!-- Quick Stats -->
+        <div class="flex gap--small">
+          <span class="label label--small">📊 Showing {{ conferences.size }} upcoming deadlines</span>
+          {% assign urgent_count = 0 %}
+          {% for conf in conferences %}
+            {% if conf.urgency.level == 'URGENT' or conf.urgency.level == 'SOON' %}
+              {% assign urgent_count = urgent_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if urgent_count > 0 %}
+            <span class="label label--small">🔥 {{ urgent_count }} urgent</span>
+          {% endif %}
+        </div>
+        
         <!-- 2-column grid, up to 8 conferences -->
         <div class="grid grid--cols-2 gap--small">
           {% assign counter = 0 %}
-          {% for conf in conferences limit:8 %}
+          {% for conf in conferences limit:10 %}
             {% assign counter = counter | plus: 1 %}
             <div class="item">
               <div class="meta">
-                <span class="index"><strong>{{ counter }}</strong></span> <!-- Ensure bold numbering -->
+                <span class="index"><strong>{{ counter }}</strong></span>
+                <!-- Urgency indicator -->
+                {% if conf.urgency.level == 'URGENT' %}
+                  <span class="label label--small">🔥 URGENT</span>
+                {% elsif conf.urgency.level == 'SOON' %}
+                  <span class="label label--small">⚡ SOON</span>
+                {% elsif conf.urgency.level == 'CLOSE' %}
+                  <span class="label label--small">⏰ CLOSE</span>
+                {% endif %}
               </div>
               <div class="content">
-                <!-- Conference Name and Year -->
-                <span class="title"><strong>{{ conf.name }} ({{ conf.year }})</strong></span>
+                <!-- Conference Name, Year, and Tier -->
+                <span class="title">
+                  <strong>{{ conf.name }} ({{ conf.year }})</strong>
+                  {% if conf.tier == 'TOP4' %}
+                    <span class="label label--small">★ TOP4</span>
+                  {% elsif conf.tier == 'TIER2' %}
+                    <span class="label label--small">⭐ TIER2</span>
+                  {% elsif conf.tier == 'TIER3' %}
+                    <span class="label label--small">• TIER3</span>
+                  {% elsif conf.tier == 'WORKSHOP' %}
+                    <span class="label label--small">🔬 WORKSHOP</span>
+                  {% endif %}
+                </span>
                 
-                <!-- Deadline Information -->
+                <!-- Deadline Information with Countdown -->
                 {% if conf.total_deadlines and conf.deadline_position and conf.total_deadlines > 1 %}
                   <span class="title title--small">
-                    <strong>Deadline ({{ conf.deadline_position }}/{{ conf.total_deadlines }}):</strong> <strong>{{ conf.next_deadline }}</strong>
+                    <strong>Deadline ({{ conf.deadline_position }}/{{ conf.total_deadlines }}):</strong> 
+                    <strong>{{ conf.deadline_formatted }}</strong>
+                    <span class="label label--small">({{ conf.days_until }} days)</span>
                   </span>
                 {% else %}
                   <span class="title title--small">
-                    <strong>Deadline (1/1):</strong> <strong>{{ conf.next_deadline }}</strong>
+                    <strong>Deadline:</strong> 
+                    <strong>{{ conf.deadline_formatted }}</strong>
+                    <span class="label label--small">({{ conf.days_until }} days)</span>
                   </span>
                 {% endif %}
                 
@@ -48,9 +85,10 @@
         </div>
       {% endif %}
       
-      <!-- Last Updated -->
+      <!-- Last Updated and Auto-Refresh Info -->
       <div class="flex gap--small">
-        <span class="label label--small">Last updated: <strong>{{ last_updated }}</strong></span>
+        <span class="label label--small">🔄 Updated: <strong>{{ last_updated_friendly }}</strong></span>
+        <span class="label label--small">🤖 Auto-refresh every 30min</span>
       </div>
     </div>
     
@@ -58,7 +96,7 @@
     <div class="title_bar">
       <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg" />
       <span class="title"><strong>Security Deadlines</strong></span>
-      <span class="instance"><strong>Copyright Ali Abbasi</strong></span>
+      <span class="instance"><strong></strong></span>
     </div>
   </div>
 </div>

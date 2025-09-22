@@ -27,15 +27,15 @@ CONFERENCE_TIERS = {
     "USENIX Security": {"tier": "TOP4", "category": "Security & Privacy", "rank": 2},
     "CCS": {"tier": "TOP4", "category": "Security & Privacy", "rank": 3},
     "NDSS": {"tier": "TOP4", "category": "Security & Privacy", "rank": 4},
-    "ACSAC": {"tier": "TIER1", "category": "Security Applications", "rank": 5},
-    "RAID": {"tier": "TIER1", "category": "Security Defense", "rank": 6},
-    "DIMVA": {"tier": "TIER1", "category": "Malware & Vulnerabilities", "rank": 7},
-    "Euro S&P": {"tier": "TIER1", "category": "Security & Privacy", "rank": 8},
-    "ESORICS": {"tier": "TIER1", "category": "Security Research", "rank": 9},
-    "ASIACCS": {"tier": "TIER1", "category": "Security & Privacy", "rank": 10},
-    "DSN": {"tier": "TIER1", "category": "Dependable Systems", "rank": 11},
+    "ACSAC": {"tier": "TIER2", "category": "Security Applications", "rank": 5},
+    "RAID": {"tier": "TIER2", "category": "Security Defense", "rank": 6},
+    "DIMVA": {"tier": "TIER2", "category": "Malware & Vulnerabilities", "rank": 7},
+    "Euro S&P": {"tier": "TIER2", "category": "Security & Privacy", "rank": 8},
+    "ESORICS": {"tier": "TIER2", "category": "Security Research", "rank": 9},
+    "ASIACCS": {"tier": "TIER2", "category": "Security & Privacy", "rank": 10},
+    "DSN": {"tier": "TIER2", "category": "Dependable Systems", "rank": 11},
     "CPSS": {"tier": "WORKSHOP", "category": "Cyber-Physical", "rank": 12},
-    "WiSec": {"tier": "TIER2", "category": "Wireless Security", "rank": 13},
+    "WiSec": {"tier": "TIER3", "category": "Wireless Security", "rank": 13},
     "FUZZING": {"tier": "WORKSHOP", "category": "Testing", "rank": 14},
     "SpaceSec": {"tier": "WORKSHOP", "category": "Space Security", "rank": 15}
 }
@@ -148,7 +148,7 @@ def parse_deadline(dl_str, source_tz, conf_year):
     return dt
 
 def generate_conference_data():
-    """Generate the conference data for TRMNL polling"""
+    """Generate the conference data for TRMNL polling - Updated Sep 22"""
     print("🔄 Generating conference data for TRMNL polling...")
     
     url = "https://raw.githubusercontent.com/sec-deadlines/sec-deadlines.github.io/refs/heads/master/_data/conferences.yml"
