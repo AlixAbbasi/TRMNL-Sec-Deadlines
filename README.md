@@ -4,49 +4,58 @@ This is an automated plugin for TRMNL that displays upcoming cybersecurity confe
 
 ## ✨ Features
 
-- **Automated Updates**: Updates every 6 hours using GitHub Actions
-- **No Manual Work**: Set it up once, runs forever
+- **Automated Updates**: Updates every 3 hours using GitHub Actions
+- **No Manual Work**: Set it up once, runs forever with automatic TRMNL refresh
 - **Real-time Data**: Fetches from the official sec-deadlines repository
 - **Smart Filtering**: Only shows conferences you care about
 
 ## 🚀 Quick Setup (5 minutes)
 
-### Step 1: Get Your TRMNL Credentials
+### Step 1: Enable GitHub Pages
+
+1. Go to your GitHub repository **Settings** 
+2. Scroll down to **Pages** (left sidebar)
+3. Under **Source**, select **Deploy from a branch**
+4. Choose **gh-pages** branch and **/ (root)** folder
+5. Click **Save**
+
+### Step 2: Run GitHub Action
+
+1. Go to the **Actions** tab in your repository
+2. Click "Update TRMNL Security Deadlines"
+3. Click **Run workflow** → **Run workflow**
+4. Wait 2-3 minutes for it to complete ✅
+5. Note the polling URL in the action output
+
+### Step 3: Configure TRMNL Plugin
 
 1. Go to your [TRMNL Plugin Settings](https://usetrmnl.com/plugin_settings)
-2. Find your existing Security Deadlines plugin
-3. Copy these two values:
-   - **API Key**: Your TRMNL developer API key
-   - **Plugin UUID**: The unique ID for your plugin
+2. Find your Security Deadlines plugin
+3. **Change Strategy from "Webhook" to "Polling"**
+4. Set **Polling URL** to: `https://[your-username].github.io/TRMNL-Sec-Deadlines/trmnl-data.json`
+5. Set **Refresh Rate** to **30 minutes** (or your preference)
+6. Save settings
 
-### Step 2: Add Secrets to GitHub
+### Step 4: Enjoy Automatic Updates! 
 
-1. Go to your GitHub repository page
-2. Click **Settings** (top menu)
-3. Click **Secrets and variables** → **Actions** (left sidebar)
-4. Click **New repository secret** and add:
-   - Name: `TRMNL_API_KEY` → Value: Your TRMNL API key
-   - Name: `PLUGIN_UUID` → Value: Your plugin UUID
+- **Every 3 hours**: GitHub generates fresh data
+- **Every 30 minutes**: TRMNL checks for updates automatically  
+- **No manual clicking**: TRMNL refreshes when data changes
+- **Monitor via Actions**: See update logs in GitHub Actions tab
 
-### Step 3: Enable GitHub Actions
+## 🎯 Why This Works Better
 
-1. Push your code to GitHub (if not already done)
-2. Go to the **Actions** tab in your repository
-3. You should see "Update TRMNL Security Deadlines" workflow
-4. Click **Enable** if prompted
+### **Before (Webhook Strategy):**
+❌ GitHub Action sends data → TRMNL receives data → **Manual "Force Refresh" needed**
 
-### Step 4: Test It
+### **After (Polling Strategy):**
+✅ GitHub Action generates data → TRMNL polls data automatically → **Auto-refresh when data changes**
 
-1. In the Actions tab, click "Update TRMNL Security Deadlines"
-2. Click **Run workflow** → **Run workflow**
-3. Wait 1-2 minutes and check if it succeeds ✅
-
-## 🎯 What Happens Next
-
-- **Automatic Updates**: Every 6 hours at 00:00, 06:00, 12:00, 18:00 UTC
-- **No Maintenance**: Runs forever without your intervention  
-- **Smart Caching**: TRMNL only updates display when data changes
-- **Error Handling**: Logs any issues in GitHub Actions
+**Key Benefits:**
+- **No more manual refreshing** - TRMNL checks automatically
+- **Proper refresh scheduling** - Updates based on TRMNL's refresh intervals  
+- **Lazy loading** - Only refreshes display when data actually changes
+- **Reliable automation** - Uses TRMNL's built-in polling system
 
 ## 🔧 Customization
 
