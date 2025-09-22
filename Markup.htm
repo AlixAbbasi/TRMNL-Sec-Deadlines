@@ -1,5 +1,5 @@
 <div class="view view--full">
-  <div class="layout layout--col gap--xsmall">
+  <div class="layout layout--col gap--small">
     <!-- Main Title -->
     <div class="title">
       <strong>Upcoming Security Conference Deadlines</strong>
@@ -7,7 +7,7 @@
     
     {% if conferences and conferences.size > 0 %}
       <!-- Enhanced Stats with Legend (Bold for E-ink) -->
-      <div class="flex gap--small">
+      <div class="flex gap--small" style="margin-top: 12px;">
         <span class="label"><strong>{{ conferences.size }} deadlines</strong></span>
         {% assign urgent_count = 0 %}
         {% assign top4_count = 0 %}
@@ -20,10 +20,10 @@
           {% endif %}
         {% endfor %}
         {% if urgent_count > 0 %}
-          <span class="label"><strong>|| {{ urgent_count }} urgent</strong></span>
+          <span class="label"><strong>| {{ urgent_count }} urgent</strong></span>
         {% endif %}
         {% if top4_count > 0 %}
-          <span class="label"><strong>|| {{ top4_count }} TOP4</strong></span>
+          <span class="label"><strong>| {{ top4_count }} TOP4</strong></span>
         {% endif %}
       </div>
       
