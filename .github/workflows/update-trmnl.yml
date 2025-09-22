@@ -38,9 +38,12 @@ jobs:
       # Generate JSON data for TRMNL polling
       - name: Generate conference data JSON
         run: |
+          echo "Current time: $(date)"
           python generate_data.py
           echo "Generated data file:"
           ls -la trmnl-data.json
+          echo "Timestamp in generated file:"
+          grep "last_updated" trmnl-data.json
           echo "Data preview:"
           head -20 trmnl-data.json
       
@@ -51,22 +54,26 @@ jobs:
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
       # Deploy to GitHub Pages for TRMNL polling  
+      - name: Prepare deployment directory
+        run: |
+          mkdir -p deploy
+          cp trmnl-data.json deploy/
+          echo "Files to deploy:"
+          ls -la deploy/
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
+          publish_dir: ./deploy
           publish_branch: gh-pages
           keep_files: false
-          include_file: trmnl-data.json
           
       - name: Show polling URL
         run: |
-          echo "🎉 Your TRMNL polling URL is ready:"
-          echo "https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/trmnl-data.json"
+          echo "🎉 Deployment complete!"
+          echo "Your TRMNL polling URL is:"
+          echo "https://alixabbasi.github.io/TRMNL-Sec-Deadlines/trmnl-data.json"
           echo ""
-          echo "📝 Next steps:"
-          echo "1. Go to your TRMNL plugin settings"
-          echo "2. Change Strategy from 'Webhook' to 'Polling'"
-          echo "3. Set Polling URL to the URL above"
-          echo "4. Set refresh interval (recommended: 30 minutes)"
+          echo "Wait 2-3 minutes for GitHub Pages to update, then check the URL."
+          echo "The timestamp should show: $(date '+%b %d, %H:%M')"
