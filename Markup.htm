@@ -7,7 +7,7 @@
     
     {% if conferences and conferences.size > 0 %}
       <!-- Enhanced Stats with Legend (Bold for E-ink) -->
-      <div class="flex gap--small" style="margin-top: 12px;">
+      <div class="flex gap--small">
         <span class="label"><strong>{{ conferences.size }} deadlines</strong></span>
         {% assign urgent_count = 0 %}
         {% assign top4_count = 0 %}
@@ -28,7 +28,7 @@
       </div>
       
       <!-- 2-column grid, maximizing vertical space with better spacing -->
-      <div class="grid grid--cols-2 gap--medium">
+      <div class="grid grid--cols-2 gap--medium" style="margin-top: 16px;">
         {% assign counter = 0 %}
         {% for conf in conferences limit:12 %}
           {% assign counter = counter | plus: 1 %}
