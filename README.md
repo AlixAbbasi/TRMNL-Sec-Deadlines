@@ -8,6 +8,7 @@ This is an automated plugin for TRMNL that displays upcoming cybersecurity confe
 - **No Manual Work**: Set it up once, runs forever with automatic TRMNL refresh
 - **Real-time Data**: Fetches from the official sec-deadlines repository
 - **Smart Filtering**: Only shows conferences you care about
+- **Enhanced Readability**: Optimized font sizes for e-ink displays
 
 ## Quick Setup (5 minutes)
 
@@ -57,7 +58,7 @@ GitHub Action generates data → TRMNL polls data automatically → **Auto-refre
 - **Lazy loading** - Only refreshes display when data actually changes
 - **Reliable automation** - Uses TRMNL's built-in polling system
 
-## 🔧 Customization
+## Customization
 
 ### Change Update Frequency
 
@@ -72,16 +73,9 @@ schedule:
   - cron: '0 */3 * * *'  # Every 3 hours
 ```
 
-### Add/Remove Conferences
+### Modify Conference Selection
 
-Edit the `TRACKED_NAMES` list in `push_conferences.py`:
-
-```python
-TRACKED_NAMES = [
-    "S&P (Oakland)", "USENIX Security", "CCS", "NDSS",
-    "Your Conference Name Here"
-]
-```
+Edit the conference filtering logic in `generate_data.py` to customize which conferences are displayed.
 
 ## Troubleshooting
 
@@ -94,8 +88,8 @@ TRACKED_NAMES = [
 
 ### **Enhanced Core Features**
 
-**Smart Deadline Urgency**: Color-coded urgency levels (Urgent, Soon, Upcoming, Distant)  
-**Conference Rankings**: TOP4, TIER1, TIER2, and Workshop classifications  
+**Smart Deadline Urgency**: Color-coded urgency levels (Urgent, Soon, Close, Normal)  
+**Conference Rankings**: TOP4, TIER2, TIER3, and Workshop classifications  
 **Multi-Deadline Support**: Shows position (e.g., "2/3") for conferences with multiple deadlines  
 **Enhanced Metadata**: Venue, type, location, and conference descriptions  
 **Smart Filtering**: Configurable options for workshops, date ranges, and display limits  
@@ -106,23 +100,20 @@ TRACKED_NAMES = [
 **Highlighted Urgent Deadlines**: Next urgent deadline prominently displayed  
 **Clean Information Hierarchy**: Title, urgency, venue, location in organized layout  
 **Visual Urgency Indicators**: Badges and styling for different urgency levels  
-**Conference Status Icons**: for TOP4 conferences, badges for urgent deadlines  
+**Conference Status Icons**: Symbols for TOP4 conferences, badges for urgent deadlines  
 **Responsive Layout**: Optimized for TRMNL's e-ink display constraints  
 **Smart Truncation**: Handles long conference names and locations gracefully  
+**Large Font Sizes**: Optimized for e-ink display readability  
 
 ### **Advanced Configuration**
 
-Edit these settings in `push_conferences.py`:
+The plugin automatically handles conference filtering and display optimization. Configuration is managed through the `generate_data.py` script which includes:
 
-```python
-CONFIG = {
-    "max_days_ahead": 365,      # Don't show deadlines > 1 year away
-    "include_workshops": True,   # Set False to exclude workshops  
-    "prioritize_top_tier": True, # Show top conferences first
-    "show_expired_days": 7,     # Show expired deadlines for X days
-    "max_display_items": 15,    # Maximum conferences to display
-}
-```
+- Maximum 16 conferences displayed for optimal e-ink readability
+- Automatic urgency calculation based on deadline proximity
+- Conference tier classification (TOP4, TIER2, TIER3, Workshop)
+- Berlin timezone for consistent deadline display
+- Smart filtering of expired and irrelevant deadlines
 
 ### **Data Enhancements**
 
@@ -136,19 +127,20 @@ Each conference now includes:
 
 ### **Template Files**
 
-**`trmnl_template.html`** - Enhanced TRMNL template with:
+**`Markup.htm`** - Enhanced TRMNL template with:
 - Prominent urgent deadline display
 - Statistics overview (Total, Urgent, Top Tier)
 - Clean conference list with urgency indicators
 - Optimized for e-ink display readability
+- Large font sizes for better visibility
 
-**Usage**: Copy the contents of `trmnl_template.html` into your TRMNL plugin's markup editor.
+**Usage**: The template is automatically deployed via GitHub Pages and polling.
 
 ## Monitored Conferences
 
 Currently tracking deadlines for:
 - **TOP4**: S&P (Oakland), USENIX Security, CCS, NDSS
-- **TIER1**: ACSAC, RAID, DIMVA, Euro S&P, ESORICS, ASIACCS, DSN  
+- **TIER2**: ACSAC, RAID, DIMVA, Euro S&P, ESORICS, ASIACCS, DSN  
 - **Workshops**: SpaceSec, CPSS, WiSec, FUZZING
 
 Data source: [sec-deadlines.github.io](https://sec-deadlines.github.io)
