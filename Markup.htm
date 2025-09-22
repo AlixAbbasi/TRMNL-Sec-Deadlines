@@ -1,5 +1,42 @@
-<div class="screen">
-  <div class="view view--full">
+<div clas        <!-- Enhanced Stats with Legend (Bold f                <                <!-- Conference Name, Year, and Tier (Bold) -->
+                <span class="title">
+                  <strong>{{ conf.name }} ({{ conf.year }})</strong>
+                  {% if conf.tier == 'TOP4' %}
+                    <span class="label label--small"><strong>★</strong></span>
+                  {% elsif conf.tier == 'TIER2' %}
+                    <span class="label label--small"><strong>⭐</strong></span>
+                  {% elsif conf.tier == 'TIER3' %}
+                    <span class="label label--small"><strong>•</strong></span>
+                  {% elsif conf.tier == 'WORKSHOP' %}
+                    <span class="label label--small"><strong>🔬</strong></span>
+                  {% endif %}
+                </span>ndicator (Bold) -->
+                {% if conf.urgency.level == 'URGENT' %}
+                  <span class="label label--small"><strong>🔥 URGENT</strong></span>
+                {% elsif conf.urgency.level == 'SOON' %}
+                  <span class="label label--small"><strong>⚡ SOON</strong></span>
+                {% elsif conf.urgency.level == 'CLOSE' %}
+                  <span class="label label--small"><strong>⏰ CLOSE</strong></span>
+                {% endif %}) -->
+        <div class="flex gap--small">
+          <span class="label label--small"><strong>📊 {{ conferences.size }} deadlines</strong></span>
+          {% assign urgent_count = 0 %}
+          {% assign top4_count = 0 %}
+          {% for conf in conferences %}
+            {% if conf.urgency.level == 'URGENT' or conf.urgency.level == 'SOON' %}
+              {% assign urgent_count = urgent_count | plus: 1 %}
+            {% endif %}
+            {% if conf.tier == 'TOP4' %}
+              {% assign top4_count = top4_count | plus: 1 %}
+            {% endif %}
+          {% endfor %}
+          {% if urgent_count > 0 %}
+            <span class="label label--small"><strong>🔥 {{ urgent_count }} urgent</strong></span>
+          {% endif %}
+          {% if top4_count > 0 %}
+            <span class="label label--small"><strong>★ {{ top4_count }} TOP4</strong></span>
+          {% endif %}
+        </div>lass="view view--full">
     <div class="layout layout--col gap--xsmall">
       <!-- Main Title -->
       <div class="title">
@@ -60,23 +97,23 @@
                   {% endif %}
                 </span>
                 
-                <!-- Deadline Information with Enhanced Details -->
+                <!-- Deadline Information with Enhanced Details (Bold) -->
                 {% if conf.total_deadlines and conf.deadline_position and conf.total_deadlines > 1 %}
                   <span class="title title--small">
                     <strong>{{ conf.deadline_formatted }}</strong>
-                    <span class="label label--small">({{ conf.days_until }}d • {{ conf.deadline_position }}/{{ conf.total_deadlines }})</span>
+                    <span class="label label--small"><strong>({{ conf.days_until }}d • {{ conf.deadline_position }}/{{ conf.total_deadlines }})</strong></span>
                   </span>
                 {% else %}
                   <span class="title title--small">
                     <strong>{{ conf.deadline_formatted }}</strong>
-                    <span class="label label--small">({{ conf.days_until }} days)</span>
+                    <span class="label label--small"><strong>({{ conf.days_until }} days)</strong></span>
                   </span>
                 {% endif %}
                 
-                <!-- Conference Date & Location (Compact) -->
+                <!-- Conference Date & Location (Bold for E-ink) -->
                 <span class="label label--small">
                   {% if conf.date %}<strong>{{ conf.date }}</strong>{% endif %}
-                  {% if conf.place %} • {{ conf.place }}{% endif %}
+                  {% if conf.place %}<strong> • {{ conf.place }}</strong>{% endif %}
                 </span>
               </div>
             </div>
