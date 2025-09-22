@@ -7,24 +7,31 @@
       </div>
       
       {% if conferences and conferences.size > 0 %}
-        <!-- Quick Stats -->
+        <!-- Enhanced Stats -->
         <div class="flex gap--small">
-          <span class="label label--small">📊 Showing {{ conferences.size }} upcoming deadlines</span>
+          <span class="label label--small">📊 {{ conferences.size }} deadlines</span>
           {% assign urgent_count = 0 %}
+          {% assign top4_count = 0 %}
           {% for conf in conferences %}
             {% if conf.urgency.level == 'URGENT' or conf.urgency.level == 'SOON' %}
               {% assign urgent_count = urgent_count | plus: 1 %}
+            {% endif %}
+            {% if conf.tier == 'TOP4' %}
+              {% assign top4_count = top4_count | plus: 1 %}
             {% endif %}
           {% endfor %}
           {% if urgent_count > 0 %}
             <span class="label label--small">🔥 {{ urgent_count }} urgent</span>
           {% endif %}
+          {% if top4_count > 0 %}
+            <span class="label label--small">★ {{ top4_count }} TOP4</span>
+          {% endif %}
         </div>
         
-        <!-- 2-column grid, up to 8 conferences -->
+        <!-- 2-column grid, up to 12 conferences -->
         <div class="grid grid--cols-2 gap--small">
           {% assign counter = 0 %}
-          {% for conf in conferences limit:10 %}
+          {% for conf in conferences limit:12 %}
             {% assign counter = counter | plus: 1 %}
             <div class="item">
               <div class="meta">
@@ -53,25 +60,24 @@
                   {% endif %}
                 </span>
                 
-                <!-- Deadline Information with Countdown -->
+                <!-- Deadline Information with Enhanced Details -->
                 {% if conf.total_deadlines and conf.deadline_position and conf.total_deadlines > 1 %}
                   <span class="title title--small">
-                    <strong>Deadline ({{ conf.deadline_position }}/{{ conf.total_deadlines }}):</strong> 
                     <strong>{{ conf.deadline_formatted }}</strong>
-                    <span class="label label--small">({{ conf.days_until }} days)</span>
+                    <span class="label label--small">({{ conf.days_until }}d • {{ conf.deadline_position }}/{{ conf.total_deadlines }})</span>
                   </span>
                 {% else %}
                   <span class="title title--small">
-                    <strong>Deadline:</strong> 
                     <strong>{{ conf.deadline_formatted }}</strong>
                     <span class="label label--small">({{ conf.days_until }} days)</span>
                   </span>
                 {% endif %}
                 
-                <!-- Conference Location -->
-                {% if conf.place %}
-                  <span class="label label--small label--underline"><strong>{{ conf.place }}</strong></span>
-                {% endif %}
+                <!-- Conference Date & Location (Compact) -->
+                <span class="label label--small">
+                  {% if conf.date %}<strong>{{ conf.date }}</strong>{% endif %}
+                  {% if conf.place %} • {{ conf.place }}{% endif %}
+                </span>
               </div>
             </div>
           {% endfor %}
@@ -84,19 +90,13 @@
           </div>
         </div>
       {% endif %}
-      
-      <!-- Last Updated and Auto-Refresh Info -->
-      <div class="flex gap--small">
-        <span class="label label--small">🔄 Updated: <strong>{{ last_updated_friendly }}</strong></span>
-        <span class="label label--small">🤖 Auto-refresh every 30min</span>
-      </div>
     </div>
     
-    <!-- Title Bar Section -->
+    <!-- Title Bar Section with Timestamp -->
     <div class="title_bar">
       <img class="image" src="https://usetrmnl.com/images/plugins/trmnl--render.svg" />
       <span class="title"><strong>Security Deadlines</strong></span>
-      <span class="instance"><strong></strong></span>
+      <span class="instance"><strong>{{ last_updated_friendly }}</strong></span>
     </div>
   </div>
 </div>
