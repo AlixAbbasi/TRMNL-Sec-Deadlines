@@ -14,7 +14,6 @@ permissions:
   contents: write
   pages: write
   id-token: write
-  actions: read
 
 jobs:
   update-deadlines:
@@ -51,29 +50,15 @@ jobs:
           git config --global user.name 'github-actions[bot]'
           git config --global user.email 'github-actions[bot]@users.noreply.github.com'
       
+      # Deploy to GitHub Pages for TRMNL polling  
       - name: Deploy to GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: |
-          # Copy the generated data file to a safe location
-          cp trmnl-data.json /tmp/trmnl-data.json
-          
-          # Create a clean gh-pages branch
-          git checkout --orphan gh-pages
-          
-          # Remove all files
-          git rm -rf .
-          git clean -fxd
-          
-          # Add only the data file we need
-          cp /tmp/trmnl-data.json trmnl-data.json
-          
-          # Add and commit
-          git add trmnl-data.json
-          git commit -m "Update conference data $(date)"
-          
-          # Push to gh-pages branch with authentication
-          git push https://x-access-token:${GITHUB_TOKEN}@github.com/AlixAbbasi/TRMNL-Sec-Deadlines.git gh-pages --force
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .
+          publish_branch: gh-pages
+          keep_files: false
+          include_file: trmnl-data.json
           
       - name: Show polling URL
         run: |
