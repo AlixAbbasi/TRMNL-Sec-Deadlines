@@ -291,8 +291,8 @@ def generate_conference_data():
             "next_urgent": next_urgent,
             "config": CONFIG
         },
-        "last_updated": datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "last_updated_friendly": datetime.now().strftime("%b %d, %H:%M")
+        "last_updated": datetime.now(TARGET_TZ).strftime("%Y-%m-%d %H:%M:%S"),
+        "last_updated_friendly": datetime.now(TARGET_TZ).strftime("%b %d, %H:%M")
     }
 
 if __name__ == "__main__":
