@@ -144,7 +144,7 @@ Each conference now includes:
 
 **Usage**: Copy the contents of `trmnl_template.html` into your TRMNL plugin's markup editor.
 
-## 📊 Monitored Conferences
+## Monitored Conferences
 
 Currently tracking deadlines for:
 - **TOP4**: S&P (Oakland), USENIX Security, CCS, NDSS
