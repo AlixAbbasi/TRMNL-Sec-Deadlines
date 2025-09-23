@@ -9,7 +9,7 @@
       "link": "https://sp2026.ieee-security.org/",
       "next_deadline": "2025-11-14 12:59:59",
       "deadline_formatted": "Nov 14, 12:59",
-      "days_until": 52,
+      "days_until": 51,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "52 days",
+        "text": "51 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 136,
+      "days_until": 135,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "136 days",
+        "text": "135 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://eurosp2026.ieee-security.org/",
       "next_deadline": "2025-11-21 12:59:59",
       "deadline_formatted": "Nov 21, 12:59",
-      "days_until": 59,
+      "days_until": 58,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 8,
       "urgency": {
         "level": "DISTANT",
-        "text": "59 days",
+        "text": "58 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -90,7 +90,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 81,
+      "days_until": 80,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "81 days",
+        "text": "80 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +117,7 @@
       "link": "https://dsn2026.github.io/",
       "next_deadline": "2025-12-05 12:59:59",
       "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 73,
+      "days_until": 72,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "73 days",
+        "text": "72 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -144,7 +144,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2025-11-10 12:59:59",
       "deadline_formatted": "Nov 10, 12:59",
-      "days_until": 48,
+      "days_until": 47,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 15,
       "urgency": {
         "level": "DISTANT",
-        "text": "48 days",
+        "text": "47 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -178,6 +178,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-09-23 11:26:49",
-  "last_updated_friendly": "Sep 23, 11:26"
+  "last_updated": "2025-09-23 14:51:10",
+  "last_updated_friendly": "Sep 23, 14:51"
 }
