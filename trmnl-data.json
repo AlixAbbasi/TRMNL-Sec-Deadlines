@@ -136,6 +136,33 @@
       "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
+      "name": "WiSec",
+      "short_name": "WiSec",
+      "year": 2026,
+      "place": "Saarbr\u00fccken, Germany",
+      "date": "June 30 - July 3",
+      "link": "https://wisec26.events.cispa.de/",
+      "next_deadline": "2025-11-19 12:59:59",
+      "deadline_formatted": "Nov 19, 12:59",
+      "days_until": 55,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TIER3",
+      "category": "Wireless Security",
+      "rank": 13,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "55 days",
+        "class": "distant"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "is_multi_deadline": true,
+      "comment": ""
+    },
+    {
       "name": "SpaceSec",
       "short_name": "SpaceSec",
       "year": 2026,
@@ -164,7 +191,7 @@
     }
   ],
   "stats": {
-    "total_conferences": 6,
+    "total_conferences": 7,
     "urgent_count": 0,
     "top_tier_count": 2,
     "workshop_count": 1,
@@ -178,6 +205,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-09-24 20:32:29",
-  "last_updated_friendly": "Sep 24, 20:32"
+  "last_updated": "2025-09-24 23:20:54",
+  "last_updated_friendly": "Sep 24, 23:20"
 }
