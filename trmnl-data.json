@@ -9,7 +9,7 @@
       "link": "https://sp2026.ieee-security.org/",
       "next_deadline": "2025-11-14 12:59:59",
       "deadline_formatted": "Nov 14, 12:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "IEEE",
@@ -26,33 +26,6 @@
       "description": "IEEE Symposium on Security and Privacy",
       "is_multi_deadline": true,
       "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
-    {
-      "name": "SpaceSec",
-      "short_name": "SpaceSec",
-      "year": 2026,
-      "place": "San Diego, California, USA",
-      "date": "February 23",
-      "link": "https://spacesec.info/",
-      "next_deadline": "2025-11-10 12:59:59",
-      "deadline_formatted": "Nov 10, 12:59",
-      "days_until": 0,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Space Security",
-      "rank": 15,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "Unknown",
-      "type": "Workshop",
-      "description": "Workshop on the Security of Space and Satellite Systems",
-      "is_multi_deadline": false,
-      "comment": "Co-located with NDSS Symposium"
     },
     {
       "name": "USENIX Security",
@@ -63,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 88,
+      "days_until": 87,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "88 days",
+        "text": "87 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 66,
+      "days_until": 65,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "66 days",
+        "text": "65 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +90,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 24,
+      "days_until": 23,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -126,7 +99,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "24 days",
+        "text": "23 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -144,7 +117,7 @@
       "link": "https://eurosp2026.ieee-security.org/",
       "next_deadline": "2025-11-21 12:59:59",
       "deadline_formatted": "Nov 21, 12:59",
-      "days_until": 11,
+      "days_until": 10,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -153,7 +126,7 @@
       "rank": 8,
       "urgency": {
         "level": "UPCOMING",
-        "text": "11 days",
+        "text": "10 days",
         "class": "upcoming"
       },
       "venue": "IEEE",
@@ -171,7 +144,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 33,
+      "days_until": 32,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -180,7 +153,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "33 days",
+        "text": "32 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -198,7 +171,7 @@
       "link": "https://dsn2026.github.io/",
       "next_deadline": "2025-12-05 12:59:59",
       "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 25,
+      "days_until": 24,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +180,7 @@
       "rank": 11,
       "urgency": {
         "level": "UPCOMING",
-        "text": "25 days",
+        "text": "24 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -225,7 +198,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2025-11-19 12:59:59",
       "deadline_formatted": "Nov 19, 12:59",
-      "days_until": 9,
+      "days_until": 8,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -234,7 +207,7 @@
       "rank": 13,
       "urgency": {
         "level": "UPCOMING",
-        "text": "9 days",
+        "text": "8 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -252,7 +225,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 32,
+      "days_until": 31,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -261,7 +234,7 @@
       "rank": 14,
       "urgency": {
         "level": "DISTANT",
-        "text": "32 days",
+        "text": "31 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -269,15 +242,8 @@
       "description": "International Fuzzing Workshop",
       "is_multi_deadline": false,
       "comment": "Co-located with NDSS 2026"
-    }
-  ],
-  "stats": {
-    "total_conferences": 10,
-    "urgent_count": 2,
-    "top_tier_count": 3,
-    "workshop_count": 2,
-    "expired_count": 0,
-    "next_urgent": {
+    },
+    {
       "name": "SpaceSec",
       "short_name": "SpaceSec",
       "year": 2026,
@@ -286,7 +252,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2025-11-10 12:59:59",
       "deadline_formatted": "Nov 10, 12:59",
-      "days_until": 0,
+      "days_until": -1,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -294,15 +260,49 @@
       "category": "Space Security",
       "rank": 15,
       "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
       },
       "venue": "Unknown",
       "type": "Workshop",
       "description": "Workshop on the Security of Space and Satellite Systems",
       "is_multi_deadline": false,
       "comment": "Co-located with NDSS Symposium"
+    }
+  ],
+  "stats": {
+    "total_conferences": 10,
+    "urgent_count": 1,
+    "top_tier_count": 3,
+    "workshop_count": 2,
+    "expired_count": 1,
+    "next_urgent": {
+      "name": "S&P (Oakland)",
+      "short_name": "IEEE S&P",
+      "year": 2026,
+      "place": "San Francisco, California, USA",
+      "date": "May 18-21",
+      "link": "https://sp2026.ieee-security.org/",
+      "next_deadline": "2025-11-14 12:59:59",
+      "deadline_formatted": "Nov 14, 12:59",
+      "days_until": 3,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 1,
+      "urgency": {
+        "level": "SOON",
+        "text": "3 days",
+        "class": "soon"
+      },
+      "venue": "IEEE",
+      "type": "Conference",
+      "description": "IEEE Symposium on Security and Privacy",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     "config": {
       "max_days_ahead": 365,
@@ -312,6 +312,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-10 10:10:25",
-  "last_updated_friendly": "Nov 10, 10:10"
+  "last_updated": "2025-11-10 13:14:22",
+  "last_updated_friendly": "Nov 10, 13:14"
 }
