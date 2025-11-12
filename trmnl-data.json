@@ -9,7 +9,7 @@
       "link": "https://sp2026.ieee-security.org/",
       "next_deadline": "2025-11-14 12:59:59",
       "deadline_formatted": "Nov 14, 12:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -17,9 +17,9 @@
       "category": "Security & Privacy",
       "rank": 1,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "IEEE",
       "type": "Conference",
@@ -36,7 +36,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2025-11-19 12:59:59",
       "deadline_formatted": "Nov 19, 12:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 13,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 86,
+      "days_until": 85,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "86 days",
+        "text": "85 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +90,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 64,
+      "days_until": 63,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +99,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "64 days",
+        "text": "63 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +117,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 22,
+      "days_until": 21,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -126,7 +126,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "22 days",
+        "text": "21 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -144,7 +144,7 @@
       "link": "https://eurosp2026.ieee-security.org/",
       "next_deadline": "2025-11-21 12:59:59",
       "deadline_formatted": "Nov 21, 12:59",
-      "days_until": 9,
+      "days_until": 8,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 8,
       "urgency": {
         "level": "UPCOMING",
-        "text": "9 days",
+        "text": "8 days",
         "class": "upcoming"
       },
       "venue": "IEEE",
@@ -171,7 +171,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 31,
+      "days_until": 30,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -179,9 +179,9 @@
       "category": "Security & Privacy",
       "rank": 10,
       "urgency": {
-        "level": "DISTANT",
-        "text": "31 days",
-        "class": "distant"
+        "level": "UPCOMING",
+        "text": "30 days",
+        "class": "upcoming"
       },
       "venue": "ACM",
       "type": "Conference",
@@ -198,7 +198,7 @@
       "link": "https://dsn2026.github.io/",
       "next_deadline": "2025-12-05 12:59:59",
       "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 23,
+      "days_until": 22,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +207,7 @@
       "rank": 11,
       "urgency": {
         "level": "UPCOMING",
-        "text": "23 days",
+        "text": "22 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -225,7 +225,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 30,
+      "days_until": 29,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -234,7 +234,7 @@
       "rank": 14,
       "urgency": {
         "level": "UPCOMING",
-        "text": "30 days",
+        "text": "29 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -252,7 +252,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2025-11-10 12:59:59",
       "deadline_formatted": "Nov 10, 12:59",
-      "days_until": -2,
+      "days_until": -3,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -286,7 +286,7 @@
       "link": "https://sp2026.ieee-security.org/",
       "next_deadline": "2025-11-14 12:59:59",
       "deadline_formatted": "Nov 14, 12:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -294,9 +294,9 @@
       "category": "Security & Privacy",
       "rank": 1,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "IEEE",
       "type": "Conference",
@@ -312,6 +312,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-12 10:09:50",
-  "last_updated_friendly": "Nov 12, 10:09"
+  "last_updated": "2025-11-12 13:14:41",
+  "last_updated_friendly": "Nov 12, 13:14"
 }
