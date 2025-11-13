@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "URGENT",
-        "text": "20h left",
+        "text": "17h left",
         "class": "urgent"
       },
       "venue": "IEEE",
@@ -295,7 +295,7 @@
       "rank": 1,
       "urgency": {
         "level": "URGENT",
-        "text": "20h left",
+        "text": "17h left",
         "class": "urgent"
       },
       "venue": "IEEE",
@@ -312,6 +312,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-13 16:09:33",
-  "last_updated_friendly": "Nov 13, 16:09"
+  "last_updated": "2025-11-13 19:10:31",
+  "last_updated_friendly": "Nov 13, 19:10"
 }
