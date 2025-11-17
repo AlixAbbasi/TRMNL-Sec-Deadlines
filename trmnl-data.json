@@ -45,7 +45,7 @@
       "rank": 13,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 20h",
+        "text": "1d 17h",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -242,14 +242,41 @@
       "description": "International Fuzzing Workshop",
       "is_multi_deadline": false,
       "comment": "Co-located with NDSS 2026"
+    },
+    {
+      "name": "SpaceSec",
+      "short_name": "SpaceSec",
+      "year": 2026,
+      "place": "San Diego, California, USA",
+      "date": "February 23",
+      "link": "https://spacesec.info/",
+      "next_deadline": "2025-11-17 12:59:59",
+      "deadline_formatted": "Nov 17, 12:59",
+      "days_until": -1,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "WORKSHOP",
+      "category": "Space Security",
+      "rank": 15,
+      "urgency": {
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
+      },
+      "venue": "Unknown",
+      "type": "Workshop",
+      "description": "Workshop on the Security of Space and Satellite Systems",
+      "is_multi_deadline": false,
+      "comment": "Co-located with NDSS Symposium"
     }
   ],
   "stats": {
-    "total_conferences": 9,
+    "total_conferences": 10,
     "urgent_count": 2,
     "top_tier_count": 3,
-    "workshop_count": 1,
-    "expired_count": 1,
+    "workshop_count": 2,
+    "expired_count": 2,
     "next_urgent": {
       "name": "WiSec",
       "short_name": "WiSec",
@@ -268,7 +295,7 @@
       "rank": 13,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 20h",
+        "text": "1d 17h",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -285,6 +312,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-17 16:09:25",
-  "last_updated_friendly": "Nov 17, 16:09"
+  "last_updated": "2025-11-17 19:11:00",
+  "last_updated_friendly": "Nov 17, 19:11"
 }
