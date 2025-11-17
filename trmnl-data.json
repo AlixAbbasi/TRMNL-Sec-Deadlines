@@ -9,7 +9,7 @@
       "link": "https://eurosp2026.ieee-security.org/",
       "next_deadline": "2025-11-21 12:59:59",
       "deadline_formatted": "Nov 21, 12:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 8,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2025-11-19 12:59:59",
       "deadline_formatted": "Nov 19, 12:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -44,9 +44,9 @@
       "category": "Wireless Security",
       "rank": 13,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "ACM",
       "type": "Conference",
@@ -63,7 +63,7 @@
       "link": "https://sp2026.ieee-security.org/",
       "next_deadline": "2025-11-14 12:59:59",
       "deadline_formatted": "Nov 14, 12:59",
-      "days_until": -3,
+      "days_until": -4,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -90,7 +90,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 81,
+      "days_until": 80,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "81 days",
+        "text": "80 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -117,7 +117,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 59,
+      "days_until": 58,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -126,7 +126,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "59 days",
+        "text": "58 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -144,7 +144,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 17,
+      "days_until": 16,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -153,7 +153,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "17 days",
+        "text": "16 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -171,7 +171,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 26,
+      "days_until": 25,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 10,
       "urgency": {
         "level": "UPCOMING",
-        "text": "26 days",
+        "text": "25 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -198,7 +198,7 @@
       "link": "https://dsn2026.github.io/",
       "next_deadline": "2025-12-05 12:59:59",
       "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 18,
+      "days_until": 17,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +207,7 @@
       "rank": 11,
       "urgency": {
         "level": "UPCOMING",
-        "text": "18 days",
+        "text": "17 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -225,7 +225,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 25,
+      "days_until": 24,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -234,7 +234,7 @@
       "rank": 14,
       "urgency": {
         "level": "UPCOMING",
-        "text": "25 days",
+        "text": "24 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -242,41 +242,14 @@
       "description": "International Fuzzing Workshop",
       "is_multi_deadline": false,
       "comment": "Co-located with NDSS 2026"
-    },
-    {
-      "name": "SpaceSec",
-      "short_name": "SpaceSec",
-      "year": 2026,
-      "place": "San Diego, California, USA",
-      "date": "February 23",
-      "link": "https://spacesec.info/",
-      "next_deadline": "2025-11-10 12:59:59",
-      "deadline_formatted": "Nov 10, 12:59",
-      "days_until": -7,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Space Security",
-      "rank": 15,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "Unknown",
-      "type": "Workshop",
-      "description": "Workshop on the Security of Space and Satellite Systems",
-      "is_multi_deadline": false,
-      "comment": "Co-located with NDSS Symposium"
     }
   ],
   "stats": {
-    "total_conferences": 10,
+    "total_conferences": 9,
     "urgent_count": 2,
     "top_tier_count": 3,
-    "workshop_count": 2,
-    "expired_count": 2,
+    "workshop_count": 1,
+    "expired_count": 1,
     "next_urgent": {
       "name": "WiSec",
       "short_name": "WiSec",
@@ -286,7 +259,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2025-11-19 12:59:59",
       "deadline_formatted": "Nov 19, 12:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -294,9 +267,9 @@
       "category": "Wireless Security",
       "rank": 13,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "ACM",
       "type": "Conference",
@@ -312,6 +285,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-17 10:11:15",
-  "last_updated_friendly": "Nov 17, 10:11"
+  "last_updated": "2025-11-17 13:14:23",
+  "last_updated_friendly": "Nov 17, 13:14"
 }
