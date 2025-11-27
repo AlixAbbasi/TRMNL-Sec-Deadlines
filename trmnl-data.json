@@ -9,7 +9,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -26,6 +26,33 @@
       "description": "The Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
       "is_multi_deadline": true,
       "comment": ""
+    },
+    {
+      "name": "DSN",
+      "short_name": "DSN",
+      "year": 2026,
+      "place": "Charlotte, NC, USA",
+      "date": "June 22-25",
+      "link": "https://dsn2026.github.io/",
+      "next_deadline": "2025-12-05 12:59:59",
+      "deadline_formatted": "Dec 05, 12:59",
+      "days_until": 7,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Dependable Systems",
+      "rank": 11,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "The International Conference on Dependable Systems and Networks",
+      "is_multi_deadline": false,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
       "name": "USENIX Security",
@@ -36,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 71,
+      "days_until": 70,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "71 days",
+        "text": "70 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +90,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 49,
+      "days_until": 48,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +99,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "49 days",
+        "text": "48 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -90,7 +117,7 @@
       "link": "https://eurosp2026.ieee-security.org/",
       "next_deadline": "2025-11-21 12:59:59",
       "deadline_formatted": "Nov 21, 12:59",
-      "days_until": -6,
+      "days_until": -7,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -117,7 +144,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 16,
+      "days_until": 15,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +153,7 @@
       "rank": 10,
       "urgency": {
         "level": "UPCOMING",
-        "text": "16 days",
+        "text": "15 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -134,33 +161,6 @@
       "description": "ACM Asia Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": ""
-    },
-    {
-      "name": "DSN",
-      "short_name": "DSN",
-      "year": 2026,
-      "place": "Charlotte, NC, USA",
-      "date": "June 22-25",
-      "link": "https://dsn2026.github.io/",
-      "next_deadline": "2025-12-05 12:59:59",
-      "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 8,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Dependable Systems",
-      "rank": 11,
-      "urgency": {
-        "level": "UPCOMING",
-        "text": "8 days",
-        "class": "upcoming"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "The International Conference on Dependable Systems and Networks",
-      "is_multi_deadline": false,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
       "name": "WiSec",
@@ -171,7 +171,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 97,
+      "days_until": 96,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "97 days",
+        "text": "96 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -198,7 +198,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 15,
+      "days_until": 14,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +207,7 @@
       "rank": 14,
       "urgency": {
         "level": "UPCOMING",
-        "text": "15 days",
+        "text": "14 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -219,7 +219,7 @@
   ],
   "stats": {
     "total_conferences": 8,
-    "urgent_count": 1,
+    "urgent_count": 2,
     "top_tier_count": 2,
     "workshop_count": 1,
     "expired_count": 1,
@@ -232,7 +232,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -241,7 +241,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -258,6 +258,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-11-27 10:09:10",
-  "last_updated_friendly": "Nov 27, 10:09"
+  "last_updated": "2025-11-27 13:14:09",
+  "last_updated_friendly": "Nov 27, 13:14"
 }
