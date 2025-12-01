@@ -9,7 +9,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -36,7 +36,7 @@
       "link": "https://dsn2026.github.io/",
       "next_deadline": "2025-12-05 12:59:59",
       "deadline_formatted": "Dec 05, 12:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 11,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -63,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 67,
+      "days_until": 66,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "67 days",
+        "text": "66 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +90,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 45,
+      "days_until": 44,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +99,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "45 days",
+        "text": "44 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +117,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 12,
+      "days_until": 11,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 10,
       "urgency": {
         "level": "UPCOMING",
-        "text": "12 days",
+        "text": "11 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -144,7 +144,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 93,
+      "days_until": 92,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "93 days",
+        "text": "92 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -171,7 +171,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 11,
+      "days_until": 10,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 14,
       "urgency": {
         "level": "UPCOMING",
-        "text": "11 days",
+        "text": "10 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -205,7 +205,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2025-12-04 12:59:59",
       "deadline_formatted": "Dec 04, 12:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -214,7 +214,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -231,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-12-01 10:12:47",
-  "last_updated_friendly": "Dec 01, 10:12"
+  "last_updated": "2025-12-01 13:14:48",
+  "last_updated_friendly": "Dec 01, 13:14"
 }
