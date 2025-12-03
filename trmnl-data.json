@@ -18,7 +18,7 @@
       "rank": 7,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 14h",
+        "text": "1d 11h",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -268,7 +268,7 @@
       "rank": 7,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 14h",
+        "text": "1d 11h",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -285,6 +285,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-12-02 22:08:17",
-  "last_updated_friendly": "Dec 02, 22:08"
+  "last_updated": "2025-12-03 01:35:04",
+  "last_updated_friendly": "Dec 03, 01:35"
 }
