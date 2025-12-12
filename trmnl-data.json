@@ -9,7 +9,7 @@
       "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
       "next_deadline": "2025-12-13 12:59:59",
       "deadline_formatted": "Dec 13, 12:59",
-      "days_until": 1,
+      "days_until": 0,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 10,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 2h",
+        "text": "23h left",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -26,33 +26,6 @@
       "description": "ACM Asia Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": ""
-    },
-    {
-      "name": "FUZZING",
-      "short_name": "FUZZING",
-      "year": 2026,
-      "place": "San Diego, CA, USA",
-      "date": "February 27",
-      "link": "https://fuzzing-workshop.github.io/",
-      "next_deadline": "2025-12-12 12:59:59",
-      "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 0,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Testing",
-      "rank": 14,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "Unknown",
-      "type": "Workshop",
-      "description": "International Fuzzing Workshop",
-      "is_multi_deadline": false,
-      "comment": "Co-located with NDSS 2026"
     },
     {
       "name": "USENIX Security",
@@ -63,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 56,
+      "days_until": 55,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "56 days",
+        "text": "55 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 34,
+      "days_until": 33,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "34 days",
+        "text": "33 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +90,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 62,
+      "days_until": 61,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +99,7 @@
       "rank": 7,
       "urgency": {
         "level": "DISTANT",
-        "text": "62 days",
+        "text": "61 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -144,7 +117,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-01-10 12:59:59",
       "deadline_formatted": "Jan 10, 12:59",
-      "days_until": 29,
+      "days_until": 28,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -153,7 +126,7 @@
       "rank": 9,
       "urgency": {
         "level": "UPCOMING",
-        "text": "29 days",
+        "text": "28 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -161,33 +134,6 @@
       "description": "European Symposium on Research in Computer Security",
       "is_multi_deadline": true,
       "comment": ""
-    },
-    {
-      "name": "DSN",
-      "short_name": "DSN",
-      "year": 2026,
-      "place": "Charlotte, NC, USA",
-      "date": "June 22-25",
-      "link": "https://dsn2026.github.io/",
-      "next_deadline": "2025-12-05 12:59:59",
-      "deadline_formatted": "Dec 05, 12:59",
-      "days_until": -7,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Dependable Systems",
-      "rank": 11,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "The International Conference on Dependable Systems and Networks",
-      "is_multi_deadline": false,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
       "name": "CPSS",
@@ -198,7 +144,7 @@
       "link": "https://cpss26.github.io/",
       "next_deadline": "2026-01-25 12:59:59",
       "deadline_formatted": "Jan 25, 12:59",
-      "days_until": 44,
+      "days_until": 43,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +153,7 @@
       "rank": 12,
       "urgency": {
         "level": "DISTANT",
-        "text": "44 days",
+        "text": "43 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -225,7 +171,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 82,
+      "days_until": 81,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -234,7 +180,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "82 days",
+        "text": "81 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -242,15 +188,8 @@
       "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
       "is_multi_deadline": true,
       "comment": ""
-    }
-  ],
-  "stats": {
-    "total_conferences": 9,
-    "urgent_count": 2,
-    "top_tier_count": 2,
-    "workshop_count": 2,
-    "expired_count": 1,
-    "next_urgent": {
+    },
+    {
       "name": "FUZZING",
       "short_name": "FUZZING",
       "year": 2026,
@@ -259,7 +198,7 @@
       "link": "https://fuzzing-workshop.github.io/",
       "next_deadline": "2025-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 0,
+      "days_until": -1,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -267,15 +206,49 @@
       "category": "Testing",
       "rank": 14,
       "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
       },
       "venue": "Unknown",
       "type": "Workshop",
       "description": "International Fuzzing Workshop",
       "is_multi_deadline": false,
       "comment": "Co-located with NDSS 2026"
+    }
+  ],
+  "stats": {
+    "total_conferences": 8,
+    "urgent_count": 1,
+    "top_tier_count": 2,
+    "workshop_count": 2,
+    "expired_count": 1,
+    "next_urgent": {
+      "name": "ASIACCS",
+      "short_name": "ASIACCS",
+      "year": 2026,
+      "place": "Bangalore, India",
+      "date": "June 1-6",
+      "link": "https://asiaccs2026.cse.iitkgp.ac.in/call-for-papers/",
+      "next_deadline": "2025-12-13 12:59:59",
+      "deadline_formatted": "Dec 13, 12:59",
+      "days_until": 0,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security & Privacy",
+      "rank": 10,
+      "urgency": {
+        "level": "URGENT",
+        "text": "23h left",
+        "class": "urgent"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Asia Conference on Computer and Communications Security",
+      "is_multi_deadline": true,
+      "comment": ""
     },
     "config": {
       "max_days_ahead": 365,
@@ -285,6 +258,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-12-12 10:11:01",
-  "last_updated_friendly": "Dec 12, 10:11"
+  "last_updated": "2025-12-12 13:14:41",
+  "last_updated_friendly": "Dec 12, 13:14"
 }
