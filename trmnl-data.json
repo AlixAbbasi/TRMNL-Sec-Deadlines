@@ -18,7 +18,7 @@
       "rank": 10,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 8h",
+        "text": "1d 5h",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -45,7 +45,7 @@
       "rank": 14,
       "urgency": {
         "level": "URGENT",
-        "text": "8h left",
+        "text": "5h left",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -268,7 +268,7 @@
       "rank": 14,
       "urgency": {
         "level": "URGENT",
-        "text": "8h left",
+        "text": "5h left",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -285,6 +285,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2025-12-12 04:36:08",
-  "last_updated_friendly": "Dec 12, 04:36"
+  "last_updated": "2025-12-12 07:12:59",
+  "last_updated_friendly": "Dec 12, 07:12"
 }
