@@ -9,7 +9,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-01-10 12:59:59",
       "deadline_formatted": "Jan 10, 12:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 9,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 32,
+      "days_until": 31,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "32 days",
+        "text": "31 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-01-15 12:59:59",
       "deadline_formatted": "Jan 15, 12:59",
-      "days_until": 10,
+      "days_until": 9,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "UPCOMING",
-        "text": "10 days",
+        "text": "9 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -90,7 +90,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 38,
+      "days_until": 37,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 7,
       "urgency": {
         "level": "DISTANT",
-        "text": "38 days",
+        "text": "37 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://cpss26.github.io/",
       "next_deadline": "2026-01-25 12:59:59",
       "deadline_formatted": "Jan 25, 12:59",
-      "days_until": 20,
+      "days_until": 19,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 12,
       "urgency": {
         "level": "UPCOMING",
-        "text": "20 days",
+        "text": "19 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -144,7 +144,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 58,
+      "days_until": 57,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "58 days",
+        "text": "57 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -178,7 +178,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-01-10 12:59:59",
       "deadline_formatted": "Jan 10, 12:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -187,7 +187,7 @@
       "rank": 9,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-01-05 10:14:54",
-  "last_updated_friendly": "Jan 05, 10:14"
+  "last_updated": "2026-01-05 13:15:37",
+  "last_updated_friendly": "Jan 05, 13:15"
 }
