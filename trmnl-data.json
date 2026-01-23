@@ -18,7 +18,7 @@
       "rank": 12,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 23h",
+        "text": "1d 20h",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -187,7 +187,7 @@
       "rank": 12,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 23h",
+        "text": "1d 20h",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-01-23 13:15:50",
-  "last_updated_friendly": "Jan 23, 13:15"
+  "last_updated": "2026-01-23 16:11:01",
+  "last_updated_friendly": "Jan 23, 16:11"
 }
