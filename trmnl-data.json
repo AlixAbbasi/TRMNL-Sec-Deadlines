@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "CPSS",
-      "short_name": "CPSS",
-      "year": 2026,
-      "place": "Bangalore, India",
-      "date": "June 2",
-      "link": "https://cpss26.github.io/",
-      "next_deadline": "2026-01-25 12:59:59",
-      "deadline_formatted": "Jan 25, 12:59",
-      "days_until": 0,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Cyber-Physical",
-      "rank": 12,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "ACM",
-      "type": "Workshop",
-      "description": "ACM Cyber-Physical System Security Workshop",
-      "is_multi_deadline": false,
-      "comment": "Co-located with ACM AsiaCCS"
-    },
-    {
       "name": "USENIX Security",
       "short_name": "USENIX Sec",
       "year": 2026,
@@ -36,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 12,
+      "days_until": 11,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "UPCOMING",
-        "text": "12 days",
+        "text": "11 days",
         "class": "upcoming"
       },
       "venue": "USENIX",
@@ -63,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 95,
+      "days_until": 94,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "95 days",
+        "text": "94 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -90,7 +63,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 18,
+      "days_until": 17,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "18 days",
+        "text": "17 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -117,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 87,
+      "days_until": 86,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "87 days",
+        "text": "86 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -134,6 +107,33 @@
       "description": "European Symposium on Research in Computer Security",
       "is_multi_deadline": true,
       "comment": ""
+    },
+    {
+      "name": "CPSS",
+      "short_name": "CPSS",
+      "year": 2026,
+      "place": "Bangalore, India",
+      "date": "June 2",
+      "link": "https://cpss26.github.io/",
+      "next_deadline": "2026-01-25 12:59:59",
+      "deadline_formatted": "Jan 25, 12:59",
+      "days_until": -1,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "WORKSHOP",
+      "category": "Cyber-Physical",
+      "rank": 12,
+      "urgency": {
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
+      },
+      "venue": "ACM",
+      "type": "Workshop",
+      "description": "ACM Cyber-Physical System Security Workshop",
+      "is_multi_deadline": false,
+      "comment": "Co-located with ACM AsiaCCS"
     },
     {
       "name": "WiSec",
@@ -144,7 +144,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 38,
+      "days_until": 37,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "38 days",
+        "text": "37 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -165,37 +165,11 @@
   ],
   "stats": {
     "total_conferences": 6,
-    "urgent_count": 1,
+    "urgent_count": 0,
     "top_tier_count": 2,
     "workshop_count": 1,
-    "expired_count": 0,
-    "next_urgent": {
-      "name": "CPSS",
-      "short_name": "CPSS",
-      "year": 2026,
-      "place": "Bangalore, India",
-      "date": "June 2",
-      "link": "https://cpss26.github.io/",
-      "next_deadline": "2026-01-25 12:59:59",
-      "deadline_formatted": "Jan 25, 12:59",
-      "days_until": 0,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Cyber-Physical",
-      "rank": 12,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "ACM",
-      "type": "Workshop",
-      "description": "ACM Cyber-Physical System Security Workshop",
-      "is_multi_deadline": false,
-      "comment": "Co-located with ACM AsiaCCS"
-    },
+    "expired_count": 1,
+    "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -204,6 +178,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-01-25 10:09:10",
-  "last_updated_friendly": "Jan 25, 10:09"
+  "last_updated": "2026-01-25 13:14:30",
+  "last_updated_friendly": "Jan 25, 13:14"
 }
