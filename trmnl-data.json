@@ -9,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 8,
+      "days_until": 7,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -17,9 +17,9 @@
       "category": "Security & Privacy",
       "rank": 2,
       "urgency": {
-        "level": "UPCOMING",
-        "text": "8 days",
-        "class": "upcoming"
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
       },
       "venue": "USENIX",
       "type": "Conference",
@@ -36,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 91,
+      "days_until": 90,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "91 days",
+        "text": "90 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 14,
+      "days_until": 13,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "14 days",
+        "text": "13 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 83,
+      "days_until": 82,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "83 days",
+        "text": "82 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://cpss26.github.io/",
       "next_deadline": "2026-01-25 12:59:59",
       "deadline_formatted": "Jan 25, 12:59",
-      "days_until": -4,
+      "days_until": -5,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -144,7 +144,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 34,
+      "days_until": 33,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "34 days",
+        "text": "33 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -165,11 +165,37 @@
   ],
   "stats": {
     "total_conferences": 6,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "top_tier_count": 2,
     "workshop_count": 1,
     "expired_count": 1,
-    "next_urgent": null,
+    "next_urgent": {
+      "name": "USENIX Security",
+      "short_name": "USENIX Sec",
+      "year": 2026,
+      "place": "Baltimore, MD, USA",
+      "date": "August 12-14",
+      "link": "https://www.usenix.org/conference/usenixsecurity26",
+      "next_deadline": "2026-02-06 12:59:59",
+      "deadline_formatted": "Feb 06, 12:59",
+      "days_until": 7,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 2,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "USENIX",
+      "type": "Conference",
+      "description": "USENIX Security Symposium",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -178,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-01-29 10:20:29",
-  "last_updated_friendly": "Jan 29, 10:20"
+  "last_updated": "2026-01-29 13:20:00",
+  "last_updated_friendly": "Jan 29, 13:20"
 }
