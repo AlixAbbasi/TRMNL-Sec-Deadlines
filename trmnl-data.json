@@ -9,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "USENIX",
@@ -36,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 86,
+      "days_until": 85,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "86 days",
+        "text": "85 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 9,
+      "days_until": 8,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "9 days",
+        "text": "8 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 78,
+      "days_until": 77,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "78 days",
+        "text": "77 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://cpss26.github.io/",
       "next_deadline": "2026-02-01 12:59:59",
       "deadline_formatted": "Feb 01, 12:59",
-      "days_until": -2,
+      "days_until": -3,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -144,7 +144,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 29,
+      "days_until": 28,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 13,
       "urgency": {
         "level": "UPCOMING",
-        "text": "29 days",
+        "text": "28 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -178,7 +178,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -187,7 +187,7 @@
       "rank": 2,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "USENIX",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-03 10:19:50",
-  "last_updated_friendly": "Feb 03, 10:19"
+  "last_updated": "2026-02-03 13:20:23",
+  "last_updated_friendly": "Feb 03, 13:20"
 }
