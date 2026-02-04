@@ -18,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 20h",
+        "text": "1d 17h",
         "class": "urgent"
       },
       "venue": "USENIX",
@@ -187,7 +187,7 @@
       "rank": 2,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 20h",
+        "text": "1d 17h",
         "class": "urgent"
       },
       "venue": "USENIX",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-04 16:21:10",
-  "last_updated_friendly": "Feb 04, 16:21"
+  "last_updated": "2026-02-04 19:22:49",
+  "last_updated_friendly": "Feb 04, 19:22"
 }
