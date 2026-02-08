@@ -9,7 +9,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": -2,
+      "days_until": -3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -63,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 81,
+      "days_until": 80,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "81 days",
+        "text": "80 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 73,
+      "days_until": 72,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "73 days",
+        "text": "72 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -107,33 +107,6 @@
       "description": "European Symposium on Research in Computer Security",
       "is_multi_deadline": true,
       "comment": ""
-    },
-    {
-      "name": "CPSS",
-      "short_name": "CPSS",
-      "year": 2026,
-      "place": "Bangalore, India",
-      "date": "June 2",
-      "link": "https://cpss26.github.io/",
-      "next_deadline": "2026-02-01 12:59:59",
-      "deadline_formatted": "Feb 01, 12:59",
-      "days_until": -7,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "WORKSHOP",
-      "category": "Cyber-Physical",
-      "rank": 12,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "ACM",
-      "type": "Workshop",
-      "description": "ACM Cyber-Physical System Security Workshop",
-      "is_multi_deadline": false,
-      "comment": "Co-located with ACM AsiaCCS"
     },
     {
       "name": "WiSec",
@@ -144,7 +117,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 24,
+      "days_until": 23,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +126,7 @@
       "rank": 13,
       "urgency": {
         "level": "UPCOMING",
-        "text": "24 days",
+        "text": "23 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -164,11 +137,11 @@
     }
   ],
   "stats": {
-    "total_conferences": 6,
+    "total_conferences": 5,
     "urgent_count": 1,
     "top_tier_count": 2,
-    "workshop_count": 1,
-    "expired_count": 2,
+    "workshop_count": 0,
+    "expired_count": 1,
     "next_urgent": {
       "name": "DIMVA",
       "short_name": "DIMVA",
@@ -178,7 +151,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -187,7 +160,7 @@
       "rank": 7,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -204,6 +177,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-08 10:12:55",
-  "last_updated_friendly": "Feb 08, 10:12"
+  "last_updated": "2026-02-08 13:16:21",
+  "last_updated_friendly": "Feb 08, 13:16"
 }
