@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "DIMVA",
-      "short_name": "DIMVA",
-      "year": 2026,
-      "place": "Chania, Greece",
-      "date": "July 01-03",
-      "link": "https://www.dimva.org/dimva2026/",
-      "next_deadline": "2026-02-12 12:59:59",
-      "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Malware & Vulnerabilities",
-      "rank": 7,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "The Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
-      "is_multi_deadline": true,
-      "comment": ""
-    },
-    {
       "name": "USENIX Security",
       "short_name": "USENIX Sec",
       "year": 2026,
@@ -36,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity26",
       "next_deadline": "2026-02-06 12:59:59",
       "deadline_formatted": "Feb 06, 12:59",
-      "days_until": -6,
+      "days_until": -7,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -63,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 77,
+      "days_until": 76,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "77 days",
+        "text": "76 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -80,6 +53,33 @@
       "description": "ACM Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
+      "name": "DIMVA",
+      "short_name": "DIMVA",
+      "year": 2026,
+      "place": "Chania, Greece",
+      "date": "July 01-03",
+      "link": "https://www.dimva.org/dimva2026/",
+      "next_deadline": "2026-02-12 12:59:59",
+      "deadline_formatted": "Feb 12, 12:59",
+      "days_until": -1,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Malware & Vulnerabilities",
+      "rank": 7,
+      "urgency": {
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "The Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
+      "is_multi_deadline": true,
+      "comment": ""
     },
     {
       "name": "ESORICS",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 69,
+      "days_until": 68,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "69 days",
+        "text": "68 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 20,
+      "days_until": 19,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 13,
       "urgency": {
         "level": "UPCOMING",
-        "text": "20 days",
+        "text": "19 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -138,37 +138,11 @@
   ],
   "stats": {
     "total_conferences": 5,
-    "urgent_count": 1,
+    "urgent_count": 0,
     "top_tier_count": 2,
     "workshop_count": 0,
-    "expired_count": 1,
-    "next_urgent": {
-      "name": "DIMVA",
-      "short_name": "DIMVA",
-      "year": 2026,
-      "place": "Chania, Greece",
-      "date": "July 01-03",
-      "link": "https://www.dimva.org/dimva2026/",
-      "next_deadline": "2026-02-12 12:59:59",
-      "deadline_formatted": "Feb 12, 12:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Malware & Vulnerabilities",
-      "rank": 7,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "The Conference on Detection of Intrusions and Malware & Vulnerability Assessment",
-      "is_multi_deadline": true,
-      "comment": ""
-    },
+    "expired_count": 2,
+    "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -177,6 +151,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-12 10:24:15",
-  "last_updated_friendly": "Feb 12, 10:24"
+  "last_updated": "2026-02-12 13:24:02",
+  "last_updated_friendly": "Feb 12, 13:24"
 }
