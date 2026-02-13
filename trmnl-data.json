@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "USENIX Security",
-      "short_name": "USENIX Sec",
-      "year": 2026,
-      "place": "Baltimore, MD, USA",
-      "date": "August 12-14",
-      "link": "https://www.usenix.org/conference/usenixsecurity26",
-      "next_deadline": "2026-02-06 12:59:59",
-      "deadline_formatted": "Feb 06, 12:59",
-      "days_until": -7,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TOP4",
-      "category": "Security & Privacy",
-      "rank": 2,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "USENIX",
-      "type": "Conference",
-      "description": "USENIX Security Symposium",
-      "is_multi_deadline": true,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
-    {
       "name": "CCS",
       "short_name": "CCS",
       "year": 2026,
@@ -36,7 +9,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 76,
+      "days_until": 75,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +18,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "76 days",
+        "text": "75 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +36,7 @@
       "link": "https://www.dimva.org/dimva2026/",
       "next_deadline": "2026-02-12 12:59:59",
       "deadline_formatted": "Feb 12, 12:59",
-      "days_until": -1,
+      "days_until": -2,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -90,7 +63,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 68,
+      "days_until": 67,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "68 days",
+        "text": "67 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +90,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 19,
+      "days_until": 18,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +99,7 @@
       "rank": 13,
       "urgency": {
         "level": "UPCOMING",
-        "text": "19 days",
+        "text": "18 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -137,11 +110,11 @@
     }
   ],
   "stats": {
-    "total_conferences": 5,
+    "total_conferences": 4,
     "urgent_count": 0,
-    "top_tier_count": 2,
+    "top_tier_count": 1,
     "workshop_count": 0,
-    "expired_count": 2,
+    "expired_count": 1,
     "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
@@ -151,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-13 10:22:32",
-  "last_updated_friendly": "Feb 13, 10:22"
+  "last_updated": "2026-02-13 13:20:49",
+  "last_updated_friendly": "Feb 13, 13:20"
 }
