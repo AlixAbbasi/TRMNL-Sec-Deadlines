@@ -28,6 +28,33 @@
       "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
+      "name": "RAID",
+      "short_name": "RAID",
+      "year": 2026,
+      "place": "Lancaster, UK",
+      "date": "October 11-14",
+      "link": "https://raid2026.org",
+      "next_deadline": "2026-04-17 13:59:59",
+      "deadline_formatted": "Apr 17, 13:59",
+      "days_until": 62,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security Defense",
+      "rank": 6,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "62 days",
+        "class": "distant"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "is_multi_deadline": false,
+      "comment": ""
+    },
+    {
       "name": "DIMVA",
       "short_name": "DIMVA",
       "year": 2026,
@@ -110,7 +137,7 @@
     }
   ],
   "stats": {
-    "total_conferences": 4,
+    "total_conferences": 5,
     "urgent_count": 0,
     "top_tier_count": 1,
     "workshop_count": 0,
@@ -124,6 +151,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-02-13 16:21:27",
-  "last_updated_friendly": "Feb 13, 16:21"
+  "last_updated": "2026-02-13 19:21:20",
+  "last_updated_friendly": "Feb 13, 19:21"
 }
