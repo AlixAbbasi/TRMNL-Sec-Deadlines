@@ -9,7 +9,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 1,
+      "days_until": 0,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 13,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 2h",
+        "text": "23h left",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -36,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 58,
+      "days_until": 57,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "58 days",
+        "text": "57 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 45,
+      "days_until": 44,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 6,
       "urgency": {
         "level": "DISTANT",
-        "text": "45 days",
+        "text": "44 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 50,
+      "days_until": 49,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "50 days",
+        "text": "49 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -124,7 +124,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 1,
+      "days_until": 0,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -133,7 +133,7 @@
       "rank": 13,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 2h",
+        "text": "23h left",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -150,6 +150,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-03-03 10:20:54",
-  "last_updated_friendly": "Mar 03, 10:20"
+  "last_updated": "2026-03-03 13:21:13",
+  "last_updated_friendly": "Mar 03, 13:21"
 }
