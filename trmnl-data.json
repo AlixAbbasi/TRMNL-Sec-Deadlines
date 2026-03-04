@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "WiSec",
-      "short_name": "WiSec",
-      "year": 2026,
-      "place": "Saarbr\u00fccken, Germany",
-      "date": "June 30 - July 3",
-      "link": "https://wisec26.events.cispa.de/",
-      "next_deadline": "2026-03-04 12:59:59",
-      "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TIER3",
-      "category": "Wireless Security",
-      "rank": 13,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "ACM",
-      "type": "Conference",
-      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
-      "is_multi_deadline": true,
-      "comment": ""
-    },
-    {
       "name": "CCS",
       "short_name": "CCS",
       "year": 2026,
@@ -36,7 +9,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 57,
+      "days_until": 56,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +18,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "57 days",
+        "text": "56 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +36,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 44,
+      "days_until": 43,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 6,
       "urgency": {
         "level": "DISTANT",
-        "text": "44 days",
+        "text": "43 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -90,7 +63,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 49,
+      "days_until": 48,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "49 days",
+        "text": "48 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -107,15 +80,8 @@
       "description": "European Symposium on Research in Computer Security",
       "is_multi_deadline": true,
       "comment": ""
-    }
-  ],
-  "stats": {
-    "total_conferences": 4,
-    "urgent_count": 1,
-    "top_tier_count": 1,
-    "workshop_count": 0,
-    "expired_count": 0,
-    "next_urgent": {
+    },
+    {
       "name": "WiSec",
       "short_name": "WiSec",
       "year": 2026,
@@ -124,7 +90,7 @@
       "link": "https://wisec26.events.cispa.de/",
       "next_deadline": "2026-03-04 12:59:59",
       "deadline_formatted": "Mar 04, 12:59",
-      "days_until": 0,
+      "days_until": -1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -132,16 +98,24 @@
       "category": "Wireless Security",
       "rank": 13,
       "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
       },
       "venue": "ACM",
       "type": "Conference",
       "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
       "is_multi_deadline": true,
       "comment": ""
-    },
+    }
+  ],
+  "stats": {
+    "total_conferences": 4,
+    "urgent_count": 0,
+    "top_tier_count": 1,
+    "workshop_count": 0,
+    "expired_count": 1,
+    "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -150,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-03-04 10:19:31",
-  "last_updated_friendly": "Mar 04, 10:19"
+  "last_updated": "2026-03-04 13:20:47",
+  "last_updated_friendly": "Mar 04, 13:20"
 }
