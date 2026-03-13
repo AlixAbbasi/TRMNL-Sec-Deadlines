@@ -9,7 +9,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 48,
+      "days_until": 47,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "48 days",
+        "text": "47 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -36,7 +36,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 35,
+      "days_until": 34,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 6,
       "urgency": {
         "level": "DISTANT",
-        "text": "35 days",
+        "text": "34 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -63,7 +63,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 40,
+      "days_until": 39,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 9,
       "urgency": {
         "level": "DISTANT",
-        "text": "40 days",
+        "text": "39 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -97,6 +97,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-03-13 10:19:48",
-  "last_updated_friendly": "Mar 13, 10:19"
+  "last_updated": "2026-03-13 13:20:51",
+  "last_updated_friendly": "Mar 13, 13:20"
 }
