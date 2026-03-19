@@ -1,6 +1,33 @@
 {
   "conferences": [
     {
+      "name": "USENIX Security",
+      "short_name": "USENIX Sec",
+      "year": 2027,
+      "place": "Denver, CO, USA",
+      "date": "August 11-13",
+      "link": "https://www.usenix.org/conference/usenixsecurity27",
+      "next_deadline": "2026-08-26 13:59:59",
+      "deadline_formatted": "Aug 26, 13:59",
+      "days_until": 160,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 2,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "160 days",
+        "class": "distant"
+      },
+      "venue": "USENIX",
+      "type": "Conference",
+      "description": "USENIX Security Symposium",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
       "name": "CCS",
       "short_name": "CCS",
       "year": 2026,
@@ -83,9 +110,9 @@
     }
   ],
   "stats": {
-    "total_conferences": 3,
+    "total_conferences": 4,
     "urgent_count": 0,
-    "top_tier_count": 1,
+    "top_tier_count": 2,
     "workshop_count": 0,
     "expired_count": 0,
     "next_urgent": null,
@@ -97,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-03-19 01:47:18",
-  "last_updated_friendly": "Mar 19, 01:47"
+  "last_updated": "2026-03-19 04:55:52",
+  "last_updated_friendly": "Mar 19, 04:55"
 }
