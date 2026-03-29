@@ -9,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 150,
+      "days_until": 149,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "150 days",
+        "text": "149 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -36,7 +36,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 32,
+      "days_until": 31,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 3,
       "urgency": {
         "level": "DISTANT",
-        "text": "32 days",
+        "text": "31 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 19,
+      "days_until": 18,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 6,
       "urgency": {
         "level": "UPCOMING",
-        "text": "19 days",
+        "text": "18 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 24,
+      "days_until": 23,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "UPCOMING",
-        "text": "24 days",
+        "text": "23 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-08-22 13:59:59",
       "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 146,
+      "days_until": 145,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -126,7 +126,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "146 days",
+        "text": "145 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -151,6 +151,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-03-29 11:18:07",
-  "last_updated_friendly": "Mar 29, 11:18"
+  "last_updated": "2026-03-29 14:19:28",
+  "last_updated_friendly": "Mar 29, 14:19"
 }
