@@ -107,37 +107,10 @@
       "description": "European Symposium on Research in Computer Security",
       "is_multi_deadline": true,
       "comment": ""
-    },
-    {
-      "name": "ASIACCS",
-      "short_name": "ASIACCS",
-      "year": 2027,
-      "place": "Macau",
-      "date": "July 12-16",
-      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
-      "next_deadline": "2026-08-22 13:59:59",
-      "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 138,
-      "total_deadlines": 2,
-      "deadline_position": 1,
-      "remaining_deadlines": 1,
-      "tier": "TIER2",
-      "category": "Security & Privacy",
-      "rank": 10,
-      "urgency": {
-        "level": "DISTANT",
-        "text": "138 days",
-        "class": "distant"
-      },
-      "venue": "ACM",
-      "type": "Conference",
-      "description": "ACM Asia Conference on Computer and Communications Security",
-      "is_multi_deadline": true,
-      "comment": ""
     }
   ],
   "stats": {
-    "total_conferences": 5,
+    "total_conferences": 4,
     "urgent_count": 0,
     "top_tier_count": 2,
     "workshop_count": 0,
@@ -151,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-05 14:20:41",
-  "last_updated_friendly": "Apr 05, 14:20"
+  "last_updated": "2026-04-05 17:14:52",
+  "last_updated_friendly": "Apr 05, 17:14"
 }
