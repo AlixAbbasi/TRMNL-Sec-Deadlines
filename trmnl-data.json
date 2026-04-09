@@ -1,6 +1,33 @@
 {
   "conferences": [
     {
+      "name": "RAID",
+      "short_name": "RAID",
+      "year": 2026,
+      "place": "Lancaster, UK",
+      "date": "October 11-14",
+      "link": "https://raid2026.org",
+      "next_deadline": "2026-04-17 13:59:59",
+      "deadline_formatted": "Apr 17, 13:59",
+      "days_until": 7,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security Defense",
+      "rank": 6,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "is_multi_deadline": false,
+      "comment": ""
+    },
+    {
       "name": "USENIX Security",
       "short_name": "USENIX Sec",
       "year": 2027,
@@ -9,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 139,
+      "days_until": 138,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "139 days",
+        "text": "138 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -36,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 21,
+      "days_until": 20,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "UPCOMING",
-        "text": "21 days",
+        "text": "20 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -53,33 +80,6 @@
       "description": "ACM Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
-    {
-      "name": "RAID",
-      "short_name": "RAID",
-      "year": 2026,
-      "place": "Lancaster, UK",
-      "date": "October 11-14",
-      "link": "https://raid2026.org",
-      "next_deadline": "2026-04-17 13:59:59",
-      "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 8,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Security Defense",
-      "rank": 6,
-      "urgency": {
-        "level": "UPCOMING",
-        "text": "8 days",
-        "class": "upcoming"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
-      "is_multi_deadline": false,
-      "comment": ""
     },
     {
       "name": "ESORICS",
@@ -90,7 +90,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 13,
+      "days_until": 12,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 9,
       "urgency": {
         "level": "UPCOMING",
-        "text": "13 days",
+        "text": "12 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -111,11 +111,37 @@
   ],
   "stats": {
     "total_conferences": 4,
-    "urgent_count": 0,
+    "urgent_count": 1,
     "top_tier_count": 2,
     "workshop_count": 0,
     "expired_count": 0,
-    "next_urgent": null,
+    "next_urgent": {
+      "name": "RAID",
+      "short_name": "RAID",
+      "year": 2026,
+      "place": "Lancaster, UK",
+      "date": "October 11-14",
+      "link": "https://raid2026.org",
+      "next_deadline": "2026-04-17 13:59:59",
+      "deadline_formatted": "Apr 17, 13:59",
+      "days_until": 7,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security Defense",
+      "rank": 6,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
+      "is_multi_deadline": false,
+      "comment": ""
+    },
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -124,6 +150,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-09 11:36:43",
-  "last_updated_friendly": "Apr 09, 11:36"
+  "last_updated": "2026-04-09 14:34:13",
+  "last_updated_friendly": "Apr 09, 14:34"
 }
