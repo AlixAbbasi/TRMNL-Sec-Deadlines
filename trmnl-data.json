@@ -9,7 +9,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -18,13 +18,40 @@
       "rank": 6,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "Unknown",
       "type": "Conference",
       "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
       "is_multi_deadline": false,
+      "comment": ""
+    },
+    {
+      "name": "ESORICS",
+      "short_name": "ESORICS",
+      "year": 2026,
+      "place": "Rome, Italy",
+      "date": "September 14-18",
+      "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
+      "next_deadline": "2026-04-22 13:59:59",
+      "deadline_formatted": "Apr 22, 13:59",
+      "days_until": 7,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security Research",
+      "rank": 9,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "European Symposium on Research in Computer Security",
+      "is_multi_deadline": true,
       "comment": ""
     },
     {
@@ -36,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 134,
+      "days_until": 133,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "134 days",
+        "text": "133 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +90,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 16,
+      "days_until": 15,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +99,7 @@
       "rank": 3,
       "urgency": {
         "level": "UPCOMING",
-        "text": "16 days",
+        "text": "15 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -90,7 +117,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 23,
+      "days_until": 22,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +126,7 @@
       "rank": 4,
       "urgency": {
         "level": "UPCOMING",
-        "text": "23 days",
+        "text": "22 days",
         "class": "upcoming"
       },
       "venue": "ISOC",
@@ -117,7 +144,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 43,
+      "days_until": 42,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +153,7 @@
       "rank": 5,
       "urgency": {
         "level": "DISTANT",
-        "text": "43 days",
+        "text": "42 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -134,38 +161,11 @@
       "description": "Annual Computer Security Applications Conference",
       "is_multi_deadline": false,
       "comment": ""
-    },
-    {
-      "name": "ESORICS",
-      "short_name": "ESORICS",
-      "year": 2026,
-      "place": "Rome, Italy",
-      "date": "September 14-18",
-      "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
-      "next_deadline": "2026-04-22 13:59:59",
-      "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 8,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Security Research",
-      "rank": 9,
-      "urgency": {
-        "level": "UPCOMING",
-        "text": "8 days",
-        "class": "upcoming"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "European Symposium on Research in Computer Security",
-      "is_multi_deadline": true,
-      "comment": ""
     }
   ],
   "stats": {
     "total_conferences": 6,
-    "urgent_count": 1,
+    "urgent_count": 2,
     "top_tier_count": 3,
     "workshop_count": 0,
     "expired_count": 0,
@@ -178,7 +178,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": 3,
+      "days_until": 2,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -187,7 +187,7 @@
       "rank": 6,
       "urgency": {
         "level": "SOON",
-        "text": "3 days",
+        "text": "2 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-14 11:40:18",
-  "last_updated_friendly": "Apr 14, 11:40"
+  "last_updated": "2026-04-14 14:33:15",
+  "last_updated_friendly": "Apr 14, 14:33"
 }
