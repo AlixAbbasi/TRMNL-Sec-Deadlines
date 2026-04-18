@@ -9,7 +9,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 9,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 130,
+      "days_until": 129,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "130 days",
+        "text": "129 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 12,
+      "days_until": 11,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 3,
       "urgency": {
         "level": "UPCOMING",
-        "text": "12 days",
+        "text": "11 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -90,7 +90,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 19,
+      "days_until": 18,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,7 +99,7 @@
       "rank": 4,
       "urgency": {
         "level": "UPCOMING",
-        "text": "19 days",
+        "text": "18 days",
         "class": "upcoming"
       },
       "venue": "ISOC",
@@ -117,7 +117,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 39,
+      "days_until": 38,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 5,
       "urgency": {
         "level": "DISTANT",
-        "text": "39 days",
+        "text": "38 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -144,7 +144,7 @@
       "link": "https://raid2026.org",
       "next_deadline": "2026-04-17 13:59:59",
       "deadline_formatted": "Apr 17, 13:59",
-      "days_until": -1,
+      "days_until": -2,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -178,7 +178,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -187,7 +187,7 @@
       "rank": 9,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-18 11:22:51",
-  "last_updated_friendly": "Apr 18, 11:22"
+  "last_updated": "2026-04-18 14:21:45",
+  "last_updated_friendly": "Apr 18, 14:21"
 }
