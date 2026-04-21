@@ -18,7 +18,7 @@
       "rank": 9,
       "urgency": {
         "level": "URGENT",
-        "text": "17h left",
+        "text": "14h left",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -187,7 +187,7 @@
       "rank": 9,
       "urgency": {
         "level": "URGENT",
-        "text": "17h left",
+        "text": "14h left",
         "class": "urgent"
       },
       "venue": "Unknown",
@@ -204,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-21 20:33:04",
-  "last_updated_friendly": "Apr 21, 20:33"
+  "last_updated": "2026-04-21 23:21:09",
+  "last_updated_friendly": "Apr 21, 23:21"
 }
