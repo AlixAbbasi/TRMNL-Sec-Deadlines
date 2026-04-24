@@ -9,7 +9,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 6,
+      "days_until": 5,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 3,
       "urgency": {
         "level": "SOON",
-        "text": "6 days",
+        "text": "5 days",
         "class": "soon"
       },
       "venue": "ACM",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 124,
+      "days_until": 123,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "124 days",
+        "text": "123 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 13,
+      "days_until": 12,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "UPCOMING",
-        "text": "13 days",
+        "text": "12 days",
         "class": "upcoming"
       },
       "venue": "ISOC",
@@ -90,7 +90,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 33,
+      "days_until": 32,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,39 +99,12 @@
       "rank": 5,
       "urgency": {
         "level": "DISTANT",
-        "text": "33 days",
+        "text": "32 days",
         "class": "distant"
       },
       "venue": "Unknown",
       "type": "Conference",
       "description": "Annual Computer Security Applications Conference",
-      "is_multi_deadline": false,
-      "comment": ""
-    },
-    {
-      "name": "RAID",
-      "short_name": "RAID",
-      "year": 2026,
-      "place": "Lancaster, UK",
-      "date": "October 11-14",
-      "link": "https://raid2026.org",
-      "next_deadline": "2026-04-17 13:59:59",
-      "deadline_formatted": "Apr 17, 13:59",
-      "days_until": -7,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Security Defense",
-      "rank": 6,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "International Symposium on Research in Attacks, Intrusions and Defenses",
       "is_multi_deadline": false,
       "comment": ""
     },
@@ -144,7 +117,7 @@
       "link": "https://sites.google.com/di.uniroma1.it/esorics2026/",
       "next_deadline": "2026-04-22 13:59:59",
       "deadline_formatted": "Apr 22, 13:59",
-      "days_until": -2,
+      "days_until": -3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -164,11 +137,11 @@
     }
   ],
   "stats": {
-    "total_conferences": 6,
+    "total_conferences": 5,
     "urgent_count": 1,
     "top_tier_count": 3,
     "workshop_count": 0,
-    "expired_count": 2,
+    "expired_count": 1,
     "next_urgent": {
       "name": "CCS",
       "short_name": "CCS",
@@ -178,7 +151,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 6,
+      "days_until": 5,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -187,7 +160,7 @@
       "rank": 3,
       "urgency": {
         "level": "SOON",
-        "text": "6 days",
+        "text": "5 days",
         "class": "soon"
       },
       "venue": "ACM",
@@ -204,6 +177,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-24 11:41:21",
-  "last_updated_friendly": "Apr 24, 11:41"
+  "last_updated": "2026-04-24 14:33:01",
+  "last_updated_friendly": "Apr 24, 14:33"
 }
