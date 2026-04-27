@@ -28,6 +28,33 @@
       "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
+      "name": "S&P (Oakland)",
+      "short_name": "IEEE S&P",
+      "year": 2027,
+      "place": "Montreal, Canada",
+      "date": "TBA",
+      "link": "https://sp2027.ieee-security.org/",
+      "next_deadline": "2026-06-12 13:59:59",
+      "deadline_formatted": "Jun 12, 13:59",
+      "days_until": 45,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 1,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "45 days",
+        "class": "distant"
+      },
+      "venue": "IEEE",
+      "type": "Conference",
+      "description": "IEEE Symposium on Security and Privacy",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
       "name": "USENIX Security",
       "short_name": "USENIX Sec",
       "year": 2027,
@@ -137,9 +164,9 @@
     }
   ],
   "stats": {
-    "total_conferences": 5,
+    "total_conferences": 6,
     "urgent_count": 1,
-    "top_tier_count": 3,
+    "top_tier_count": 4,
     "workshop_count": 0,
     "expired_count": 1,
     "next_urgent": {
@@ -177,6 +204,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-27 14:45:28",
-  "last_updated_friendly": "Apr 27, 14:45"
+  "last_updated": "2026-04-27 17:41:30",
+  "last_updated_friendly": "Apr 27, 17:41"
 }
