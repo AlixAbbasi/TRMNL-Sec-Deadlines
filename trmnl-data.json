@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "CCS",
-      "short_name": "CCS",
-      "year": 2026,
-      "place": "The Hague, The Netherlands",
-      "date": "November 15-19",
-      "link": "https://www.sigsac.org/ccs/CCS2026",
-      "next_deadline": "2026-04-30 13:59:59",
-      "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TOP4",
-      "category": "Security & Privacy",
-      "rank": 3,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "ACM",
-      "type": "Conference",
-      "description": "ACM Conference on Computer and Communications Security",
-      "is_multi_deadline": true,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
-    {
       "name": "NDSS",
       "short_name": "NDSS",
       "year": 2027,
@@ -36,7 +9,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +18,7 @@
       "rank": 4,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "ISOC",
@@ -63,7 +36,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 43,
+      "days_until": 42,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +45,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "43 days",
+        "text": "42 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -90,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 118,
+      "days_until": 117,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -99,12 +72,39 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "118 days",
+        "text": "117 days",
         "class": "distant"
       },
       "venue": "USENIX",
       "type": "Conference",
       "description": "USENIX Security Symposium",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
+      "name": "CCS",
+      "short_name": "CCS",
+      "year": 2026,
+      "place": "The Hague, The Netherlands",
+      "date": "November 15-19",
+      "link": "https://www.sigsac.org/ccs/CCS2026",
+      "next_deadline": "2026-04-30 13:59:59",
+      "deadline_formatted": "Apr 30, 13:59",
+      "days_until": -1,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 3,
+      "urgency": {
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": "Abstract registration required (1 week before deadline AoE)."
     },
@@ -117,7 +117,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 27,
+      "days_until": 26,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 5,
       "urgency": {
         "level": "UPCOMING",
-        "text": "27 days",
+        "text": "26 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -138,36 +138,36 @@
   ],
   "stats": {
     "total_conferences": 5,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "top_tier_count": 4,
     "workshop_count": 0,
-    "expired_count": 0,
+    "expired_count": 1,
     "next_urgent": {
-      "name": "CCS",
-      "short_name": "CCS",
-      "year": 2026,
-      "place": "The Hague, The Netherlands",
-      "date": "November 15-19",
-      "link": "https://www.sigsac.org/ccs/CCS2026",
-      "next_deadline": "2026-04-30 13:59:59",
-      "deadline_formatted": "Apr 30, 13:59",
-      "days_until": 0,
+      "name": "NDSS",
+      "short_name": "NDSS",
+      "year": 2027,
+      "place": "TBD",
+      "date": "TBD",
+      "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
+      "next_deadline": "2026-05-07 13:59:59",
+      "deadline_formatted": "May 07, 13:59",
+      "days_until": 6,
       "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
       "tier": "TOP4",
       "category": "Security & Privacy",
-      "rank": 3,
+      "rank": 4,
       "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
+        "level": "SOON",
+        "text": "6 days",
+        "class": "soon"
       },
-      "venue": "ACM",
+      "venue": "ISOC",
       "type": "Conference",
-      "description": "ACM Conference on Computer and Communications Security",
+      "description": "ISOC Network and Distributed System Security Symposium",
       "is_multi_deadline": true,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
+      "comment": ""
     },
     "config": {
       "max_days_ahead": 365,
@@ -177,6 +177,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-04-30 11:49:08",
-  "last_updated_friendly": "Apr 30, 11:49"
+  "last_updated": "2026-04-30 14:45:05",
+  "last_updated_friendly": "Apr 30, 14:45"
 }
