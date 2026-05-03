@@ -9,7 +9,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 4,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "ISOC",
@@ -36,7 +36,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 40,
+      "days_until": 39,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "40 days",
+        "text": "39 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -63,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 115,
+      "days_until": 114,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "115 days",
+        "text": "114 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +90,7 @@
       "link": "https://www.sigsac.org/ccs/CCS2026",
       "next_deadline": "2026-04-30 13:59:59",
       "deadline_formatted": "Apr 30, 13:59",
-      "days_until": -3,
+      "days_until": -4,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -117,7 +117,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 24,
+      "days_until": 23,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 5,
       "urgency": {
         "level": "UPCOMING",
-        "text": "24 days",
+        "text": "23 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -151,7 +151,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-05-07 13:59:59",
       "deadline_formatted": "May 07, 13:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -160,7 +160,7 @@
       "rank": 4,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "ISOC",
@@ -177,6 +177,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-05-03 11:36:31",
-  "last_updated_friendly": "May 03, 11:36"
+  "last_updated": "2026-05-03 14:28:06",
+  "last_updated_friendly": "May 03, 14:28"
 }
