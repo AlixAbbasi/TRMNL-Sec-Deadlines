@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 35,
+      "days_until": 34,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "35 days",
+        "text": "34 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 110,
+      "days_until": 109,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "110 days",
+        "text": "109 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 104,
+      "days_until": 103,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "DISTANT",
-        "text": "104 days",
+        "text": "103 days",
         "class": "distant"
       },
       "venue": "ISOC",
@@ -90,7 +90,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 19,
+      "days_until": 18,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 5,
       "urgency": {
         "level": "UPCOMING",
-        "text": "19 days",
+        "text": "18 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -124,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-05-08 11:41:34",
-  "last_updated_friendly": "May 08, 11:41"
+  "last_updated": "2026-05-08 14:42:22",
+  "last_updated_friendly": "May 08, 14:42"
 }
