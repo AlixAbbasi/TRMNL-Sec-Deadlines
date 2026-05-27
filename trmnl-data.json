@@ -1,33 +1,6 @@
 {
   "conferences": [
     {
-      "name": "ACSAC",
-      "short_name": "ACSAC",
-      "year": 2026,
-      "place": "Los Angeles, CA, USA",
-      "date": "Dec 7-11",
-      "link": "https://www.acsac.org/2026/submissions/papers/",
-      "next_deadline": "2026-05-27 13:59:59",
-      "deadline_formatted": "May 27, 13:59",
-      "days_until": 0,
-      "total_deadlines": 1,
-      "deadline_position": 1,
-      "remaining_deadlines": 0,
-      "tier": "TIER2",
-      "category": "Security Applications",
-      "rank": 5,
-      "urgency": {
-        "level": "URGENT",
-        "text": "1h left",
-        "class": "urgent"
-      },
-      "venue": "Unknown",
-      "type": "Conference",
-      "description": "Annual Computer Security Applications Conference",
-      "is_multi_deadline": false,
-      "comment": ""
-    },
-    {
       "name": "S&P (Oakland)",
       "short_name": "IEEE S&P",
       "year": 2027,
@@ -36,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 16,
+      "days_until": 15,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "UPCOMING",
-        "text": "16 days",
+        "text": "15 days",
         "class": "upcoming"
       },
       "venue": "IEEE",
@@ -63,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 91,
+      "days_until": 90,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "91 days",
+        "text": "90 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 85,
+      "days_until": 84,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "DISTANT",
-        "text": "85 days",
+        "text": "84 days",
         "class": "distant"
       },
       "venue": "ISOC",
@@ -107,15 +80,8 @@
       "description": "ISOC Network and Distributed System Security Symposium",
       "is_multi_deadline": true,
       "comment": ""
-    }
-  ],
-  "stats": {
-    "total_conferences": 4,
-    "urgent_count": 1,
-    "top_tier_count": 3,
-    "workshop_count": 0,
-    "expired_count": 0,
-    "next_urgent": {
+    },
+    {
       "name": "ACSAC",
       "short_name": "ACSAC",
       "year": 2026,
@@ -124,7 +90,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": 0,
+      "days_until": -1,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -132,16 +98,24 @@
       "category": "Security Applications",
       "rank": 5,
       "urgency": {
-        "level": "URGENT",
-        "text": "1h left",
-        "class": "urgent"
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
       },
       "venue": "Unknown",
       "type": "Conference",
       "description": "Annual Computer Security Applications Conference",
       "is_multi_deadline": false,
       "comment": ""
-    },
+    }
+  ],
+  "stats": {
+    "total_conferences": 4,
+    "urgent_count": 0,
+    "top_tier_count": 3,
+    "workshop_count": 0,
+    "expired_count": 1,
+    "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -150,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-05-27 12:29:15",
-  "last_updated_friendly": "May 27, 12:29"
+  "last_updated": "2026-05-27 15:26:41",
+  "last_updated_friendly": "May 27, 15:26"
 }
