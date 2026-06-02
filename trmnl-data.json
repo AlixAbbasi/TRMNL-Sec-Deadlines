@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 10,
+      "days_until": 9,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "UPCOMING",
-        "text": "10 days",
+        "text": "9 days",
         "class": "upcoming"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 85,
+      "days_until": 84,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "85 days",
+        "text": "84 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 79,
+      "days_until": 78,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "DISTANT",
-        "text": "79 days",
+        "text": "78 days",
         "class": "distant"
       },
       "venue": "ISOC",
@@ -90,7 +90,7 @@
       "link": "https://www.acsac.org/2026/submissions/papers/",
       "next_deadline": "2026-05-27 13:59:59",
       "deadline_formatted": "May 27, 13:59",
-      "days_until": -6,
+      "days_until": -7,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -124,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-06-02 12:38:54",
-  "last_updated_friendly": "Jun 02, 12:38"
+  "last_updated": "2026-06-02 15:33:02",
+  "last_updated_friendly": "Jun 02, 15:33"
 }
