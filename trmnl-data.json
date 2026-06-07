@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 80,
+      "days_until": 79,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "80 days",
+        "text": "79 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 74,
+      "days_until": 73,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "DISTANT",
-        "text": "74 days",
+        "text": "73 days",
         "class": "distant"
       },
       "venue": "ISOC",
@@ -97,7 +97,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-06-12 13:59:59",
       "deadline_formatted": "Jun 12, 13:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -106,7 +106,7 @@
       "rank": 1,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "IEEE",
@@ -123,6 +123,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-06-07 12:04:19",
-  "last_updated_friendly": "Jun 07, 12:04"
+  "last_updated": "2026-06-07 14:43:50",
+  "last_updated_friendly": "Jun 07, 14:43"
 }
