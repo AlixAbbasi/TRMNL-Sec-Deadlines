@@ -80,10 +80,37 @@
       "description": "ISOC Network and Distributed System Security Symposium",
       "is_multi_deadline": true,
       "comment": ""
+    },
+    {
+      "name": "DSN",
+      "short_name": "DSN",
+      "year": 2027,
+      "place": "Berlin, Germany",
+      "date": "June 22-25",
+      "link": "https://dsn2027-berlin.github.io/",
+      "next_deadline": "2026-12-03 12:59:59",
+      "deadline_formatted": "Dec 03, 12:59",
+      "days_until": 155,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Dependable Systems",
+      "rank": 11,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "155 days",
+        "class": "distant"
+      },
+      "venue": "Unknown",
+      "type": "Conference",
+      "description": "The International Conference on Dependable Systems and Networks",
+      "is_multi_deadline": false,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
     }
   ],
   "stats": {
-    "total_conferences": 3,
+    "total_conferences": 4,
     "urgent_count": 0,
     "top_tier_count": 3,
     "workshop_count": 0,
@@ -97,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-07-01 03:15:31",
-  "last_updated_friendly": "Jul 01, 03:15"
+  "last_updated": "2026-07-01 06:38:06",
+  "last_updated_friendly": "Jul 01, 06:38"
 }
