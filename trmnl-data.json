@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 104,
+      "days_until": 103,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "104 days",
+        "text": "103 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 20,
+      "days_until": 19,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "UPCOMING",
-        "text": "20 days",
+        "text": "19 days",
         "class": "upcoming"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 14,
+      "days_until": 13,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 4,
       "urgency": {
         "level": "UPCOMING",
-        "text": "14 days",
+        "text": "13 days",
         "class": "upcoming"
       },
       "venue": "ISOC",
@@ -90,7 +90,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 119,
+      "days_until": 118,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "119 days",
+        "text": "118 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -124,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-06 11:57:05",
-  "last_updated_friendly": "Aug 06, 11:57"
+  "last_updated": "2026-08-06 14:44:51",
+  "last_updated_friendly": "Aug 06, 14:44"
 }
