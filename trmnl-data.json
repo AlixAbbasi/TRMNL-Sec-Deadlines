@@ -9,7 +9,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 4,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "ISOC",
@@ -36,7 +36,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 97,
+      "days_until": 96,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "97 days",
+        "text": "96 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -63,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 13,
+      "days_until": 12,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "UPCOMING",
-        "text": "13 days",
+        "text": "12 days",
         "class": "upcoming"
       },
       "venue": "USENIX",
@@ -90,7 +90,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 112,
+      "days_until": 111,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "112 days",
+        "text": "111 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -124,7 +124,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -133,7 +133,7 @@
       "rank": 4,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "ISOC",
@@ -150,6 +150,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-13 11:29:43",
-  "last_updated_friendly": "Aug 13, 11:29"
+  "last_updated": "2026-08-13 14:23:28",
+  "last_updated_friendly": "Aug 13, 14:23"
 }
