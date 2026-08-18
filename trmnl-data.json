@@ -45,7 +45,7 @@
       "rank": 4,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 17h",
+        "text": "1d 14h",
         "class": "urgent"
       },
       "venue": "ISOC",
@@ -214,7 +214,7 @@
       "rank": 4,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 17h",
+        "text": "1d 14h",
         "class": "urgent"
       },
       "venue": "ISOC",
@@ -231,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-18 20:10:54",
-  "last_updated_friendly": "Aug 18, 20:10"
+  "last_updated": "2026-08-18 23:08:20",
+  "last_updated_friendly": "Aug 18, 23:08"
 }
