@@ -8,10 +8,11 @@ import pytz
 import re
 
 # Same configuration as main script
+# CHANGED: "ASIACCS" -> "ASIA CCS" (upstream sec-deadlines uses a space).
 TRACKED_NAMES = [
     "S&P (Oakland)", "USENIX Security", "CCS", "NDSS",
     "ACSAC", "RAID", "DIMVA", "Euro S&P",
-    "SpaceSec", "ESORICS", "CPSS", "ASIACCS", "WiSec", "FUZZING", "DSN"
+    "SpaceSec", "ESORICS", "CPSS", "ASIA CCS", "WiSec", "FUZZING", "DSN"
 ]
 
 CONFIG = {
@@ -22,6 +23,7 @@ CONFIG = {
     "max_display_items": 15,
 }
 
+# CHANGED: key renamed to match TRACKED_NAMES and the upstream YAML.
 CONFERENCE_TIERS = {
     "S&P (Oakland)": {"tier": "TOP4", "category": "Security & Privacy", "rank": 1},
     "USENIX Security": {"tier": "TOP4", "category": "Security & Privacy", "rank": 2},
@@ -32,7 +34,7 @@ CONFERENCE_TIERS = {
     "DIMVA": {"tier": "TIER2", "category": "Malware & Vulnerabilities", "rank": 7},
     "Euro S&P": {"tier": "TIER2", "category": "Security & Privacy", "rank": 8},
     "ESORICS": {"tier": "TIER2", "category": "Security Research", "rank": 9},
-    "ASIACCS": {"tier": "TIER2", "category": "Security & Privacy", "rank": 10},
+    "ASIA CCS": {"tier": "TIER2", "category": "Security & Privacy", "rank": 10},
     "DSN": {"tier": "TIER2", "category": "Dependable Systems", "rank": 11},
     "CPSS": {"tier": "WORKSHOP", "category": "Cyber-Physical", "rank": 12},
     "WiSec": {"tier": "TIER3", "category": "Wireless Security", "rank": 13},
@@ -43,11 +45,12 @@ CONFERENCE_TIERS = {
 DEFAULT_TZ = pytz.timezone("Etc/GMT+12")
 TARGET_TZ = pytz.timezone("Europe/Berlin")
 
+
 def get_urgency_info(deadline_dt, now_dt):
     time_diff = deadline_dt - now_dt
     days = time_diff.days
     hours = time_diff.seconds // 3600
-    
+
     if days < 0:
         return {"level": "EXPIRED", "text": "Expired", "class": "expired"}
     elif days == 0:
@@ -61,16 +64,17 @@ def get_urgency_info(deadline_dt, now_dt):
     else:
         return {"level": "DISTANT", "text": f"{days} days", "class": "distant"}
 
+
 def extract_conference_info(conf):
     description = conf.get('description', '')
     tags = conf.get('tags', [])
-    
+
     conf_type = "Conference"
     if "SHOP" in tags:
         conf_type = "Workshop"
     elif "CONF" in tags:
         conf_type = "Conference"
-    
+
     venue = "Unknown"
     if "IEEE" in description:
         venue = "IEEE"
@@ -80,13 +84,14 @@ def extract_conference_info(conf):
         venue = "USENIX"
     elif "ISOC" in description:
         venue = "ISOC"
-    
+
     return {
         "type": conf_type,
         "venue": venue,
         "description": description,
         "tags": tags
     }
+
 
 def get_conference_timezone(conf):
     tz_str = conf.get('timezone', None)
@@ -98,9 +103,11 @@ def get_conference_timezone(conf):
     else:
         return DEFAULT_TZ
 
+
 def adjust_midnight(deadline_str):
     date_part, time_part = deadline_str.split()
     segments = time_part.split(":")
+
     if len(segments) == 2 and segments[1] == "00":
         hour = int(segments[0])
         if hour == 0:
@@ -124,7 +131,9 @@ def adjust_midnight(deadline_str):
             else:
                 hour -= 1
                 time_part = f"{hour:02d}:59:59"
+
     return f"{date_part} {time_part}"
+
 
 def handle_placeholders(dl_str, conf_year):
     conf_year_int = int(conf_year)
@@ -132,9 +141,10 @@ def handle_placeholders(dl_str, conf_year):
     dl_str = dl_str.replace("%Y", str(conf_year_int - 1))
     return dl_str
 
+
 def parse_deadline(dl_str, source_tz, conf_year):
     dl_str = handle_placeholders(dl_str, conf_year)
-    
+
     if " " in dl_str:
         dl_str = adjust_midnight(dl_str)
         date_part, time_part = dl_str.split()
@@ -147,12 +157,13 @@ def parse_deadline(dl_str, source_tz, conf_year):
     dt = source_tz.localize(naive_dt)
     return dt
 
+
 def generate_conference_data():
-    """Generate the conference data for TRMNL polling - Updated Sep 22"""
+    """Generate the conference data for TRMNL polling."""
     print("🔄 Generating conference data for TRMNL polling...")
-    
+
     url = "https://raw.githubusercontent.com/sec-deadlines/sec-deadlines.github.io/refs/heads/master/_data/conferences.yml"
-    
+
     try:
         print("📥 Fetching conference data...")
         response = requests.get(url)
@@ -164,29 +175,44 @@ def generate_conference_data():
         print(f"❌ Error fetching conference data: {e}")
         return None
 
+    # ADDED: a tracked name that matches nothing upstream used to fail silently.
+    # This is how ASIACCS vs "ASIA CCS" went unnoticed.
+    upstream_names = {conf.get('name') for conf in conferences_data}
+    unmatched = [name for name in TRACKED_NAMES if name not in upstream_names]
+    if unmatched:
+        for name in unmatched:
+            near = sorted(
+                n for n in upstream_names
+                if n and n.upper().replace(" ", "") == name.upper().replace(" ", "")
+            )
+            hint = f" (upstream has: {', '.join(repr(n) for n in near)})" if near else ""
+            print(f"⚠️  Tracked name never matched: {name!r}{hint}")
+
     now_local = datetime.now(TARGET_TZ)
     filtered = []
-    
+
     total_processed = 0
     excluded_workshops = 0
     excluded_too_far = 0
-  
+
     for conf in conferences_data:
         conf_name = conf.get('name')
+
         if conf_name in TRACKED_NAMES:
             total_processed += 1
-            
             conf_info = extract_conference_info(conf)
+
             if not CONFIG["include_workshops"] and conf_info["type"] == "Workshop":
                 excluded_workshops += 1
                 continue
-            
+
             deadlines = conf.get('deadline', [])
             if not deadlines:
                 continue
 
             source_tz = get_conference_timezone(conf)
             conf_year = conf.get('year')
+
             parsed_all = []
             for dl_str in deadlines:
                 dt = parse_deadline(dl_str, source_tz, conf_year)
@@ -194,67 +220,69 @@ def generate_conference_data():
                 parsed_all.append(dt_local)
 
             parsed_all.sort()
-            
+
             valid_deadlines = []
             for dl in parsed_all:
                 days_diff = (dl - now_local).days
-                
                 if days_diff >= -CONFIG["show_expired_days"] and days_diff <= CONFIG["max_days_ahead"]:
                     valid_deadlines.append(dl)
                 elif days_diff > CONFIG["max_days_ahead"]:
                     excluded_too_far += 1
-            
+
             if not valid_deadlines:
                 continue
-                
-            future_deadlines = [d for d in valid_deadlines if d > now_local]
-            next_dl = future_deadlines[0] if future_deadlines else valid_deadlines[-1]
-            
-            total_count = len(parsed_all)
-            deadline_position = parsed_all.index(next_dl) + 1
-            
-            tier_info = CONFERENCE_TIERS.get(conf_name, {
-                "tier": "OTHER", "category": "General", "rank": 99
-            })
-            urgency_info = get_urgency_info(next_dl, now_local)
-            days_until = (next_dl - now_local).days
-            
-            conf_date = conf.get('date', 'TBD')
-            if conf_date and conf_date != 'TBD':
-                conf_date = re.sub(r'\s+', ' ', conf_date.strip())
-            
-            short_name = conf_name
-            if conf_name == "S&P (Oakland)":
-                short_name = "IEEE S&P"
-            elif conf_name == "USENIX Security":
-                short_name = "USENIX Sec"
-            elif "Euro S&P" in conf_name:
-                short_name = "Euro S&P"
 
-            conf_record = {
-                "name": conf_name,
-                "short_name": short_name,
-                "year": conf.get('year'),
-                "place": conf.get('place', 'TBD'),
-                "date": conf_date,
-                "link": conf.get('link'),
-                "next_deadline": next_dl.strftime("%Y-%m-%d %H:%M:%S"),
-                "deadline_formatted": next_dl.strftime("%b %d, %H:%M"),
-                "days_until": days_until,
-                "total_deadlines": total_count,
-                "deadline_position": deadline_position,
-                "remaining_deadlines": total_count - deadline_position,
-                "tier": tier_info["tier"],
-                "category": tier_info["category"],
-                "rank": tier_info["rank"],
-                "urgency": urgency_info,
-                "venue": conf_info["venue"],
-                "type": conf_info["type"],
-                "description": conf_info["description"],
-                "is_multi_deadline": total_count > 1,
-                "comment": conf.get('comment', ''),
-            }
-            filtered.append(conf_record)
+            # CHANGED: emit one record per in-window deadline instead of only the
+            # next one. Previously every cycle after the first was discarded, so
+            # USENIX Security cycle 2 never appeared.
+            for next_dl in valid_deadlines:
+                total_count = len(parsed_all)
+                deadline_position = parsed_all.index(next_dl) + 1
+
+                tier_info = CONFERENCE_TIERS.get(conf_name, {
+                    "tier": "OTHER", "category": "General", "rank": 99
+                })
+
+                urgency_info = get_urgency_info(next_dl, now_local)
+                days_until = (next_dl - now_local).days
+
+                conf_date = conf.get('date', 'TBD')
+                if conf_date and conf_date != 'TBD':
+                    conf_date = re.sub(r'\s+', ' ', conf_date.strip())
+
+                short_name = conf_name
+                if conf_name == "S&P (Oakland)":
+                    short_name = "IEEE S&P"
+                elif conf_name == "USENIX Security":
+                    short_name = "USENIX Sec"
+                elif "Euro S&P" in conf_name:
+                    short_name = "Euro S&P"
+
+                conf_record = {
+                    "name": conf_name,
+                    "short_name": short_name,
+                    "year": conf.get('year'),
+                    "place": conf.get('place', 'TBD'),
+                    "date": conf_date,
+                    "link": conf.get('link'),
+                    "next_deadline": next_dl.strftime("%Y-%m-%d %H:%M:%S"),
+                    "deadline_formatted": next_dl.strftime("%b %d, %H:%M"),
+                    "days_until": days_until,
+                    "total_deadlines": total_count,
+                    "deadline_position": deadline_position,
+                    "remaining_deadlines": total_count - deadline_position,
+                    "tier": tier_info["tier"],
+                    "category": tier_info["category"],
+                    "rank": tier_info["rank"],
+                    "urgency": urgency_info,
+                    "venue": conf_info["venue"],
+                    "type": conf_info["type"],
+                    "description": conf_info["description"],
+                    "is_multi_deadline": total_count > 1,
+                    "comment": conf.get('comment', ''),
+                }
+
+                filtered.append(conf_record)
 
     if CONFIG["prioritize_top_tier"]:
         filtered.sort(key=lambda c: (
@@ -264,16 +292,16 @@ def generate_conference_data():
         ))
     else:
         filtered.sort(key=lambda c: parser.isoparse(c["next_deadline"]))
-    
+
     filtered = filtered[:CONFIG["max_display_items"]]
-    
-    print(f"📊 Generated data for {len(filtered)} conferences")
-    
+
+    print(f"📊 Generated data for {len(filtered)} deadlines")
+
     urgent_count = len([c for c in filtered if c["urgency"]["level"] in ["URGENT", "SOON"]])
     top_tier_count = len([c for c in filtered if c["tier"] == "TOP4"])
     workshop_count = len([c for c in filtered if c["type"] == "Workshop"])
     expired_count = len([c for c in filtered if c["days_until"] < 0])
-    
+
     next_urgent = None
     if urgent_count > 0:
         urgent_confs = [c for c in filtered if c["urgency"]["level"] in ["URGENT", "SOON"]]
@@ -294,6 +322,7 @@ def generate_conference_data():
         "last_updated": datetime.now(TARGET_TZ).strftime("%Y-%m-%d %H:%M:%S"),
         "last_updated_friendly": datetime.now(TARGET_TZ).strftime("%b %d, %H:%M")
     }
+
 
 if __name__ == "__main__":
     data = generate_conference_data()
