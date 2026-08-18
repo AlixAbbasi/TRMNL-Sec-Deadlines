@@ -1,6 +1,33 @@
 {
   "conferences": [
     {
+      "name": "USENIX Security",
+      "short_name": "USENIX Sec",
+      "year": 2027,
+      "place": "Denver, CO, USA",
+      "date": "August 11-13",
+      "link": "https://www.usenix.org/conference/usenixsecurity27",
+      "next_deadline": "2026-08-26 13:59:59",
+      "deadline_formatted": "Aug 26, 13:59",
+      "days_until": 7,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TOP4",
+      "category": "Security & Privacy",
+      "rank": 2,
+      "urgency": {
+        "level": "SOON",
+        "text": "7 days",
+        "class": "soon"
+      },
+      "venue": "USENIX",
+      "type": "Conference",
+      "description": "USENIX Security Symposium",
+      "is_multi_deadline": true,
+      "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
       "name": "NDSS",
       "short_name": "NDSS",
       "year": 2027,
@@ -9,7 +36,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -17,13 +44,40 @@
       "category": "Security & Privacy",
       "rank": 4,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "ISOC",
       "type": "Conference",
       "description": "ISOC Network and Distributed System Security Symposium",
+      "is_multi_deadline": true,
+      "comment": ""
+    },
+    {
+      "name": "ASIA CCS",
+      "short_name": "ASIA CCS",
+      "year": 2027,
+      "place": "Macau",
+      "date": "July 12-16",
+      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
+      "next_deadline": "2026-08-22 13:59:59",
+      "deadline_formatted": "Aug 22, 13:59",
+      "days_until": 3,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TIER2",
+      "category": "Security & Privacy",
+      "rank": 10,
+      "urgency": {
+        "level": "SOON",
+        "text": "3 days",
+        "class": "soon"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Asia Conference on Computer and Communications Security",
       "is_multi_deadline": true,
       "comment": ""
     },
@@ -36,7 +90,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 92,
+      "days_until": 91,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +99,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "92 days",
+        "text": "91 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -61,25 +115,52 @@
       "place": "Denver, CO, USA",
       "date": "August 11-13",
       "link": "https://www.usenix.org/conference/usenixsecurity27",
-      "next_deadline": "2026-08-26 13:59:59",
-      "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 8,
+      "next_deadline": "2027-01-27 12:59:59",
+      "deadline_formatted": "Jan 27, 12:59",
+      "days_until": 161,
       "total_deadlines": 2,
-      "deadline_position": 1,
-      "remaining_deadlines": 1,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
       "tier": "TOP4",
       "category": "Security & Privacy",
       "rank": 2,
       "urgency": {
-        "level": "UPCOMING",
-        "text": "8 days",
-        "class": "upcoming"
+        "level": "DISTANT",
+        "text": "161 days",
+        "class": "distant"
       },
       "venue": "USENIX",
       "type": "Conference",
       "description": "USENIX Security Symposium",
       "is_multi_deadline": true,
       "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
+      "name": "ASIA CCS",
+      "short_name": "ASIA CCS",
+      "year": 2027,
+      "place": "Macau",
+      "date": "July 12-16",
+      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
+      "next_deadline": "2026-12-12 12:59:59",
+      "deadline_formatted": "Dec 12, 12:59",
+      "days_until": 115,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TIER2",
+      "category": "Security & Privacy",
+      "rank": 10,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "115 days",
+        "class": "distant"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Asia Conference on Computer and Communications Security",
+      "is_multi_deadline": true,
+      "comment": ""
     },
     {
       "name": "DSN",
@@ -90,7 +171,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 107,
+      "days_until": 106,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,7 +180,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "107 days",
+        "text": "106 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -110,9 +191,9 @@
     }
   ],
   "stats": {
-    "total_conferences": 4,
-    "urgent_count": 1,
-    "top_tier_count": 3,
+    "total_conferences": 7,
+    "urgent_count": 3,
+    "top_tier_count": 4,
     "workshop_count": 0,
     "expired_count": 0,
     "next_urgent": {
@@ -124,7 +205,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": 2,
+      "days_until": 1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -132,9 +213,9 @@
       "category": "Security & Privacy",
       "rank": 4,
       "urgency": {
-        "level": "SOON",
-        "text": "2 days",
-        "class": "soon"
+        "level": "URGENT",
+        "text": "1d 23h",
+        "class": "urgent"
       },
       "venue": "ISOC",
       "type": "Conference",
@@ -150,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-18 11:13:04",
-  "last_updated_friendly": "Aug 18, 11:13"
+  "last_updated": "2026-08-18 14:12:07",
+  "last_updated_friendly": "Aug 18, 14:12"
 }
