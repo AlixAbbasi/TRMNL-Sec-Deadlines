@@ -45,7 +45,7 @@
       "rank": 4,
       "urgency": {
         "level": "URGENT",
-        "text": "20h left",
+        "text": "17h left",
         "class": "urgent"
       },
       "venue": "ISOC",
@@ -214,7 +214,7 @@
       "rank": 4,
       "urgency": {
         "level": "URGENT",
-        "text": "20h left",
+        "text": "17h left",
         "class": "urgent"
       },
       "venue": "ISOC",
@@ -231,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-19 17:11:28",
-  "last_updated_friendly": "Aug 19, 17:11"
+  "last_updated": "2026-08-19 20:10:26",
+  "last_updated_friendly": "Aug 19, 20:10"
 }
