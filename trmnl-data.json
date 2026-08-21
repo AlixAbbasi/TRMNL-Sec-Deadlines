@@ -9,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "USENIX",
@@ -36,7 +36,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-08-22 13:59:59",
       "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 1,
+      "days_until": 0,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -45,7 +45,7 @@
       "rank": 10,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 2h",
+        "text": "23h left",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -63,7 +63,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 89,
+      "days_until": 88,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "89 days",
+        "text": "88 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -90,7 +90,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 159,
+      "days_until": 158,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "159 days",
+        "text": "158 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -117,7 +117,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": -1,
+      "days_until": -2,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -144,7 +144,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 113,
+      "days_until": 112,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "113 days",
+        "text": "112 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -171,7 +171,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 104,
+      "days_until": 103,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "104 days",
+        "text": "103 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -205,7 +205,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-08-22 13:59:59",
       "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 1,
+      "days_until": 0,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -214,7 +214,7 @@
       "rank": 10,
       "urgency": {
         "level": "URGENT",
-        "text": "1d 2h",
+        "text": "23h left",
         "class": "urgent"
       },
       "venue": "ACM",
@@ -231,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-21 11:16:06",
-  "last_updated_friendly": "Aug 21, 11:16"
+  "last_updated": "2026-08-21 14:12:43",
+  "last_updated_friendly": "Aug 21, 14:12"
 }
