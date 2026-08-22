@@ -9,7 +9,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": 4,
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -18,7 +18,7 @@
       "rank": 2,
       "urgency": {
         "level": "SOON",
-        "text": "4 days",
+        "text": "3 days",
         "class": "soon"
       },
       "venue": "USENIX",
@@ -28,42 +28,15 @@
       "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     {
-      "name": "ASIA CCS",
-      "short_name": "ASIA CCS",
-      "year": 2027,
-      "place": "Macau",
-      "date": "July 12-16",
-      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
-      "next_deadline": "2026-08-22 13:59:59",
-      "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 1,
-      "remaining_deadlines": 1,
-      "tier": "TIER2",
-      "category": "Security & Privacy",
-      "rank": 10,
-      "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
-      },
-      "venue": "ACM",
-      "type": "Conference",
-      "description": "ACM Asia Conference on Computer and Communications Security",
-      "is_multi_deadline": true,
-      "comment": ""
-    },
-    {
       "name": "S&P (Oakland)",
       "short_name": "IEEE S&P",
       "year": 2027,
       "place": "Montreal, Canada",
-      "date": "TBA",
+      "date": "May 17-20",
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 88,
+      "days_until": 87,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "88 days",
+        "text": "87 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -90,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 158,
+      "days_until": 157,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "158 days",
+        "text": "157 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -117,7 +90,7 @@
       "link": "https://www.ndss-symposium.org/ndss2027/submissions/call-for-papers/",
       "next_deadline": "2026-08-20 13:59:59",
       "deadline_formatted": "Aug 20, 13:59",
-      "days_until": -2,
+      "days_until": -3,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -142,9 +115,36 @@
       "place": "Macau",
       "date": "July 12-16",
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
+      "next_deadline": "2026-08-22 13:59:59",
+      "deadline_formatted": "Aug 22, 13:59",
+      "days_until": -1,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TIER2",
+      "category": "Security & Privacy",
+      "rank": 10,
+      "urgency": {
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Asia Conference on Computer and Communications Security",
+      "is_multi_deadline": true,
+      "comment": ""
+    },
+    {
+      "name": "ASIA CCS",
+      "short_name": "ASIA CCS",
+      "year": 2027,
+      "place": "Macau",
+      "date": "July 12-16",
+      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 112,
+      "days_until": 111,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "112 days",
+        "text": "111 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -171,7 +171,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 103,
+      "days_until": 102,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "103 days",
+        "text": "102 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -192,36 +192,36 @@
   ],
   "stats": {
     "total_conferences": 7,
-    "urgent_count": 2,
+    "urgent_count": 1,
     "top_tier_count": 4,
     "workshop_count": 0,
-    "expired_count": 1,
+    "expired_count": 2,
     "next_urgent": {
-      "name": "ASIA CCS",
-      "short_name": "ASIA CCS",
+      "name": "USENIX Security",
+      "short_name": "USENIX Sec",
       "year": 2027,
-      "place": "Macau",
-      "date": "July 12-16",
-      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
-      "next_deadline": "2026-08-22 13:59:59",
-      "deadline_formatted": "Aug 22, 13:59",
-      "days_until": 0,
+      "place": "Denver, CO, USA",
+      "date": "August 11-13",
+      "link": "https://www.usenix.org/conference/usenixsecurity27",
+      "next_deadline": "2026-08-26 13:59:59",
+      "deadline_formatted": "Aug 26, 13:59",
+      "days_until": 3,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
-      "tier": "TIER2",
+      "tier": "TOP4",
       "category": "Security & Privacy",
-      "rank": 10,
+      "rank": 2,
       "urgency": {
-        "level": "URGENT",
-        "text": "2h left",
-        "class": "urgent"
+        "level": "SOON",
+        "text": "3 days",
+        "class": "soon"
       },
-      "venue": "ACM",
+      "venue": "USENIX",
       "type": "Conference",
-      "description": "ACM Asia Conference on Computer and Communications Security",
+      "description": "USENIX Security Symposium",
       "is_multi_deadline": true,
-      "comment": ""
+      "comment": "Abstract registration required (1 week before deadline AoE)."
     },
     "config": {
       "max_days_ahead": 365,
@@ -231,6 +231,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-22 11:10:01",
-  "last_updated_friendly": "Aug 22, 11:10"
+  "last_updated": "2026-08-22 14:09:00",
+  "last_updated_friendly": "Aug 22, 14:09"
 }
