@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 81,
+      "days_until": 80,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "81 days",
+        "text": "80 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2026-08-26 13:59:59",
       "deadline_formatted": "Aug 26, 13:59",
-      "days_until": -3,
+      "days_until": -4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -63,7 +63,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 151,
+      "days_until": 150,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "151 days",
+        "text": "150 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -88,36 +88,9 @@
       "place": "Macau",
       "date": "July 12-16",
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
-      "next_deadline": "2026-08-22 13:59:59",
-      "deadline_formatted": "Aug 22, 13:59",
-      "days_until": -7,
-      "total_deadlines": 2,
-      "deadline_position": 1,
-      "remaining_deadlines": 1,
-      "tier": "TIER2",
-      "category": "Security & Privacy",
-      "rank": 10,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "ACM",
-      "type": "Conference",
-      "description": "ACM Asia Conference on Computer and Communications Security",
-      "is_multi_deadline": true,
-      "comment": ""
-    },
-    {
-      "name": "ASIA CCS",
-      "short_name": "ASIA CCS",
-      "year": 2027,
-      "place": "Macau",
-      "date": "July 12-16",
-      "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 105,
+      "days_until": 104,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -126,7 +99,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "105 days",
+        "text": "104 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -144,7 +117,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 96,
+      "days_until": 95,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -153,7 +126,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "96 days",
+        "text": "95 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -164,11 +137,11 @@
     }
   ],
   "stats": {
-    "total_conferences": 6,
+    "total_conferences": 5,
     "urgent_count": 0,
     "top_tier_count": 3,
     "workshop_count": 0,
-    "expired_count": 2,
+    "expired_count": 1,
     "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
@@ -178,6 +151,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-08-29 11:16:02",
-  "last_updated_friendly": "Aug 29, 11:16"
+  "last_updated": "2026-08-29 14:23:10",
+  "last_updated_friendly": "Aug 29, 14:23"
 }
