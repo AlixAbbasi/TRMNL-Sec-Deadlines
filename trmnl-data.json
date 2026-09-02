@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 77,
+      "days_until": 76,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "77 days",
+        "text": "76 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -34,36 +34,9 @@
       "place": "Denver, CO, USA",
       "date": "August 11-13",
       "link": "https://www.usenix.org/conference/usenixsecurity27",
-      "next_deadline": "2026-08-26 13:59:59",
-      "deadline_formatted": "Aug 26, 13:59",
-      "days_until": -7,
-      "total_deadlines": 2,
-      "deadline_position": 1,
-      "remaining_deadlines": 1,
-      "tier": "TOP4",
-      "category": "Security & Privacy",
-      "rank": 2,
-      "urgency": {
-        "level": "EXPIRED",
-        "text": "Expired",
-        "class": "expired"
-      },
-      "venue": "USENIX",
-      "type": "Conference",
-      "description": "USENIX Security Symposium",
-      "is_multi_deadline": true,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
-    {
-      "name": "USENIX Security",
-      "short_name": "USENIX Sec",
-      "year": 2027,
-      "place": "Denver, CO, USA",
-      "date": "August 11-13",
-      "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 147,
+      "days_until": 146,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "147 days",
+        "text": "146 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -90,7 +63,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 101,
+      "days_until": 100,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +72,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "101 days",
+        "text": "100 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +90,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 92,
+      "days_until": 91,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +99,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "92 days",
+        "text": "91 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -137,11 +110,11 @@
     }
   ],
   "stats": {
-    "total_conferences": 5,
+    "total_conferences": 4,
     "urgent_count": 0,
-    "top_tier_count": 3,
+    "top_tier_count": 2,
     "workshop_count": 0,
-    "expired_count": 1,
+    "expired_count": 0,
     "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
@@ -151,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-09-02 11:21:10",
-  "last_updated_friendly": "Sep 02, 11:21"
+  "last_updated": "2026-09-02 14:28:21",
+  "last_updated_friendly": "Sep 02, 14:28"
 }
