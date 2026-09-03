@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 76,
+      "days_until": 75,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "76 days",
+        "text": "75 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 146,
+      "days_until": 145,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "146 days",
+        "text": "145 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 100,
+      "days_until": 99,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "100 days",
+        "text": "99 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -90,7 +90,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 91,
+      "days_until": 90,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "91 days",
+        "text": "90 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -124,6 +124,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-09-03 11:21:06",
-  "last_updated_friendly": "Sep 03, 11:21"
+  "last_updated": "2026-09-03 14:28:25",
+  "last_updated_friendly": "Sep 03, 14:28"
 }
