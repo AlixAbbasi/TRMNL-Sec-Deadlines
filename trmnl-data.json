@@ -134,13 +134,40 @@
       "description": "The International Conference on Dependable Systems and Networks",
       "is_multi_deadline": false,
       "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
+      "name": "SpaceSec",
+      "short_name": "SpaceSec",
+      "year": 2027,
+      "place": "Seoul, South Korea",
+      "date": "March 22-26",
+      "link": "https://spacesec.info/",
+      "next_deadline": "2026-12-07 12:59:59",
+      "deadline_formatted": "Dec 07, 12:59",
+      "days_until": 83,
+      "total_deadlines": 1,
+      "deadline_position": 1,
+      "remaining_deadlines": 0,
+      "tier": "WORKSHOP",
+      "category": "Space Security",
+      "rank": 15,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "83 days",
+        "class": "distant"
+      },
+      "venue": "Unknown",
+      "type": "Workshop",
+      "description": "Workshop on the Security of Space and Satellite Systems",
+      "is_multi_deadline": false,
+      "comment": "Co-located with NDSS Symposium"
     }
   ],
   "stats": {
-    "total_conferences": 5,
+    "total_conferences": 6,
     "urgent_count": 0,
     "top_tier_count": 2,
-    "workshop_count": 0,
+    "workshop_count": 1,
     "expired_count": 0,
     "next_urgent": null,
     "config": {
@@ -151,6 +178,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-09-15 02:50:48",
-  "last_updated_friendly": "Sep 15, 02:50"
+  "last_updated": "2026-09-15 05:22:16",
+  "last_updated_friendly": "Sep 15, 05:22"
 }
