@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 62,
+      "days_until": 61,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 1,
       "urgency": {
         "level": "DISTANT",
-        "text": "62 days",
+        "text": "61 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 132,
+      "days_until": 131,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "132 days",
+        "text": "131 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://eurosp2027.ieee-security.org/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 77,
+      "days_until": 76,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -72,7 +72,7 @@
       "rank": 8,
       "urgency": {
         "level": "DISTANT",
-        "text": "77 days",
+        "text": "76 days",
         "class": "distant"
       },
       "venue": "IEEE",
@@ -90,7 +90,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 86,
+      "days_until": 85,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 10,
       "urgency": {
         "level": "DISTANT",
-        "text": "86 days",
+        "text": "85 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -117,7 +117,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 77,
+      "days_until": 76,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 11,
       "urgency": {
         "level": "DISTANT",
-        "text": "77 days",
+        "text": "76 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -144,7 +144,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2026-12-07 12:59:59",
       "deadline_formatted": "Dec 07, 12:59",
-      "days_until": 81,
+      "days_until": 80,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 15,
       "urgency": {
         "level": "DISTANT",
-        "text": "81 days",
+        "text": "80 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -178,6 +178,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-09-17 11:20:53",
-  "last_updated_friendly": "Sep 17, 11:20"
+  "last_updated": "2026-09-17 14:27:26",
+  "last_updated_friendly": "Sep 17, 14:27"
 }
