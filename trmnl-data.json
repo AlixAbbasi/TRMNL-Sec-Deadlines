@@ -9,7 +9,7 @@
       "link": "https://sp2027.ieee-security.org/",
       "next_deadline": "2026-11-18 12:59:59",
       "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 0,
+      "days_until": -1,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -17,9 +17,9 @@
       "category": "Security & Privacy",
       "rank": 1,
       "urgency": {
-        "level": "URGENT",
-        "text": "0h left",
-        "class": "urgent"
+        "level": "EXPIRED",
+        "text": "Expired",
+        "class": "expired"
       },
       "venue": "IEEE",
       "type": "Conference",
@@ -36,7 +36,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 70,
+      "days_until": 69,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "70 days",
+        "text": "69 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -63,7 +63,7 @@
       "link": "https://www.dimva.org/dimva2027/",
       "next_deadline": "2026-12-11 12:59:59",
       "deadline_formatted": "Dec 11, 12:59",
-      "days_until": 23,
+      "days_until": 22,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "23 days",
+        "text": "22 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -90,7 +90,7 @@
       "link": "https://www.dimva.org/dimva2027/",
       "next_deadline": "2027-02-19 12:59:59",
       "deadline_formatted": "Feb 19, 12:59",
-      "days_until": 93,
+      "days_until": 92,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 7,
       "urgency": {
         "level": "DISTANT",
-        "text": "93 days",
+        "text": "92 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -117,7 +117,7 @@
       "link": "https://eurosp2027.ieee-security.org/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 15,
+      "days_until": 14,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -126,7 +126,7 @@
       "rank": 8,
       "urgency": {
         "level": "UPCOMING",
-        "text": "15 days",
+        "text": "14 days",
         "class": "upcoming"
       },
       "venue": "IEEE",
@@ -144,7 +144,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 24,
+      "days_until": 23,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 10,
       "urgency": {
         "level": "UPCOMING",
-        "text": "24 days",
+        "text": "23 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -171,7 +171,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 15,
+      "days_until": 14,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 11,
       "urgency": {
         "level": "UPCOMING",
-        "text": "15 days",
+        "text": "14 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -188,6 +188,60 @@
       "description": "The International Conference on Dependable Systems and Networks",
       "is_multi_deadline": false,
       "comment": "Abstract registration required (1 week before deadline AoE)."
+    },
+    {
+      "name": "WiSec",
+      "short_name": "WiSec",
+      "year": 2027,
+      "place": "Singapore",
+      "date": "June 29 - July 2",
+      "link": "https://ntu-dtc.github.io/wisec2027/",
+      "next_deadline": "2026-12-01 12:59:59",
+      "deadline_formatted": "Dec 01, 12:59",
+      "days_until": 12,
+      "total_deadlines": 2,
+      "deadline_position": 1,
+      "remaining_deadlines": 1,
+      "tier": "TIER3",
+      "category": "Wireless Security",
+      "rank": 13,
+      "urgency": {
+        "level": "UPCOMING",
+        "text": "12 days",
+        "class": "upcoming"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "is_multi_deadline": true,
+      "comment": ""
+    },
+    {
+      "name": "WiSec",
+      "short_name": "WiSec",
+      "year": 2027,
+      "place": "Singapore",
+      "date": "June 29 - July 2",
+      "link": "https://ntu-dtc.github.io/wisec2027/",
+      "next_deadline": "2027-02-16 12:59:59",
+      "deadline_formatted": "Feb 16, 12:59",
+      "days_until": 89,
+      "total_deadlines": 2,
+      "deadline_position": 2,
+      "remaining_deadlines": 0,
+      "tier": "TIER3",
+      "category": "Wireless Security",
+      "rank": 13,
+      "urgency": {
+        "level": "DISTANT",
+        "text": "89 days",
+        "class": "distant"
+      },
+      "venue": "ACM",
+      "type": "Conference",
+      "description": "ACM Conference on Security and Privacy in Wireless and Mobile Networks",
+      "is_multi_deadline": true,
+      "comment": ""
     },
     {
       "name": "SpaceSec",
@@ -198,7 +252,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2026-12-07 12:59:59",
       "deadline_formatted": "Dec 07, 12:59",
-      "days_until": 19,
+      "days_until": 18,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +261,7 @@
       "rank": 15,
       "urgency": {
         "level": "UPCOMING",
-        "text": "19 days",
+        "text": "18 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -218,38 +272,12 @@
     }
   ],
   "stats": {
-    "total_conferences": 8,
-    "urgent_count": 1,
+    "total_conferences": 10,
+    "urgent_count": 0,
     "top_tier_count": 2,
     "workshop_count": 1,
-    "expired_count": 0,
-    "next_urgent": {
-      "name": "S&P (Oakland)",
-      "short_name": "IEEE S&P",
-      "year": 2027,
-      "place": "Montreal, Canada",
-      "date": "May 17-20",
-      "link": "https://sp2027.ieee-security.org/",
-      "next_deadline": "2026-11-18 12:59:59",
-      "deadline_formatted": "Nov 18, 12:59",
-      "days_until": 0,
-      "total_deadlines": 2,
-      "deadline_position": 2,
-      "remaining_deadlines": 0,
-      "tier": "TOP4",
-      "category": "Security & Privacy",
-      "rank": 1,
-      "urgency": {
-        "level": "URGENT",
-        "text": "0h left",
-        "class": "urgent"
-      },
-      "venue": "IEEE",
-      "type": "Conference",
-      "description": "IEEE Symposium on Security and Privacy",
-      "is_multi_deadline": true,
-      "comment": "Abstract registration required (1 week before deadline AoE)."
-    },
+    "expired_count": 1,
+    "next_urgent": null,
     "config": {
       "max_days_ahead": 365,
       "include_workshops": true,
@@ -258,6 +286,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-11-18 12:26:02",
-  "last_updated_friendly": "Nov 18, 12:26"
+  "last_updated": "2026-11-18 21:18:39",
+  "last_updated_friendly": "Nov 18, 21:18"
 }
