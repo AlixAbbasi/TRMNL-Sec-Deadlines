@@ -9,7 +9,7 @@
       "link": "https://eurosp2027.ieee-security.org/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -18,7 +18,7 @@
       "rank": 8,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "IEEE",
@@ -36,7 +36,7 @@
       "link": "https://dsn2027-berlin.github.io/",
       "next_deadline": "2026-12-03 12:59:59",
       "deadline_formatted": "Dec 03, 12:59",
-      "days_until": 7,
+      "days_until": 6,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -45,7 +45,7 @@
       "rank": 11,
       "urgency": {
         "level": "SOON",
-        "text": "7 days",
+        "text": "6 days",
         "class": "soon"
       },
       "venue": "Unknown",
@@ -63,7 +63,7 @@
       "link": "https://ntu-dtc.github.io/wisec2027/",
       "next_deadline": "2026-12-01 12:59:59",
       "deadline_formatted": "Dec 01, 12:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -72,7 +72,7 @@
       "rank": 13,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "ACM",
@@ -90,7 +90,7 @@
       "link": "https://www.usenix.org/conference/usenixsecurity27",
       "next_deadline": "2027-01-27 12:59:59",
       "deadline_formatted": "Jan 27, 12:59",
-      "days_until": 62,
+      "days_until": 61,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -99,7 +99,7 @@
       "rank": 2,
       "urgency": {
         "level": "DISTANT",
-        "text": "62 days",
+        "text": "61 days",
         "class": "distant"
       },
       "venue": "USENIX",
@@ -117,7 +117,7 @@
       "link": "https://www.dimva.org/dimva2027/",
       "next_deadline": "2026-12-11 12:59:59",
       "deadline_formatted": "Dec 11, 12:59",
-      "days_until": 15,
+      "days_until": 14,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -126,7 +126,7 @@
       "rank": 7,
       "urgency": {
         "level": "UPCOMING",
-        "text": "15 days",
+        "text": "14 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -144,7 +144,7 @@
       "link": "https://www.dimva.org/dimva2027/",
       "next_deadline": "2027-02-19 12:59:59",
       "deadline_formatted": "Feb 19, 12:59",
-      "days_until": 85,
+      "days_until": 84,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -153,7 +153,7 @@
       "rank": 7,
       "urgency": {
         "level": "DISTANT",
-        "text": "85 days",
+        "text": "84 days",
         "class": "distant"
       },
       "venue": "Unknown",
@@ -171,7 +171,7 @@
       "link": "https://asiaccs2027.cityu.edu.mo/home/index.html",
       "next_deadline": "2026-12-12 12:59:59",
       "deadline_formatted": "Dec 12, 12:59",
-      "days_until": 16,
+      "days_until": 15,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -180,7 +180,7 @@
       "rank": 10,
       "urgency": {
         "level": "UPCOMING",
-        "text": "16 days",
+        "text": "15 days",
         "class": "upcoming"
       },
       "venue": "ACM",
@@ -198,7 +198,7 @@
       "link": "https://cpss-workshop.github.io/2027/",
       "next_deadline": "2027-02-21 12:59:59",
       "deadline_formatted": "Feb 21, 12:59",
-      "days_until": 87,
+      "days_until": 86,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -207,7 +207,7 @@
       "rank": 12,
       "urgency": {
         "level": "DISTANT",
-        "text": "87 days",
+        "text": "86 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -225,7 +225,7 @@
       "link": "https://ntu-dtc.github.io/wisec2027/",
       "next_deadline": "2027-02-16 12:59:59",
       "deadline_formatted": "Feb 16, 12:59",
-      "days_until": 82,
+      "days_until": 81,
       "total_deadlines": 2,
       "deadline_position": 2,
       "remaining_deadlines": 0,
@@ -234,7 +234,7 @@
       "rank": 13,
       "urgency": {
         "level": "DISTANT",
-        "text": "82 days",
+        "text": "81 days",
         "class": "distant"
       },
       "venue": "ACM",
@@ -252,7 +252,7 @@
       "link": "https://spacesec.info/",
       "next_deadline": "2026-12-07 12:59:59",
       "deadline_formatted": "Dec 07, 12:59",
-      "days_until": 11,
+      "days_until": 10,
       "total_deadlines": 1,
       "deadline_position": 1,
       "remaining_deadlines": 0,
@@ -261,7 +261,7 @@
       "rank": 15,
       "urgency": {
         "level": "UPCOMING",
-        "text": "11 days",
+        "text": "10 days",
         "class": "upcoming"
       },
       "venue": "Unknown",
@@ -286,7 +286,7 @@
       "link": "https://ntu-dtc.github.io/wisec2027/",
       "next_deadline": "2026-12-01 12:59:59",
       "deadline_formatted": "Dec 01, 12:59",
-      "days_until": 5,
+      "days_until": 4,
       "total_deadlines": 2,
       "deadline_position": 1,
       "remaining_deadlines": 1,
@@ -295,7 +295,7 @@
       "rank": 13,
       "urgency": {
         "level": "SOON",
-        "text": "5 days",
+        "text": "4 days",
         "class": "soon"
       },
       "venue": "ACM",
@@ -312,6 +312,6 @@
       "max_display_items": 15
     }
   },
-  "last_updated": "2026-11-26 04:26:47",
-  "last_updated_friendly": "Nov 26, 04:26"
+  "last_updated": "2026-11-26 17:42:28",
+  "last_updated_friendly": "Nov 26, 17:42"
 }
